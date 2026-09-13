@@ -5,7 +5,10 @@
   "ps5": [],
   "dell": [],
   "lighting": [],
-  "nuki": [],
+  "nuki": [
+    "img/nuki-1.webp",
+    "img/nuki-2.webp"
+  ],
   "aqara": [
     "img/aqara-1.webp",
     "img/aqara-2.webp"
