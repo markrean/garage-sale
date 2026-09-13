@@ -67,8 +67,13 @@
   "starkvind": [
     "img/starkvind-1.webp"
   ],
-  "kivik": [],
-  "keter": [],
+  "kivik": [
+    "img/kivik-1.webp",
+    "img/kivik-2.webp"
+  ],
+  "keter": [
+    "img/keter-1.webp"
+  ],
   "oskarshamn": [
     "img/oskarshamn-1.webp"
   ],
