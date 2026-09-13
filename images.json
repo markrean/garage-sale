@@ -2,7 +2,9 @@
   "sonos": [],
   "symfonisk": [],
   "lgtv": [],
-  "ps5": [],
+  "ps5": [
+    "img/ps5-1.webp"
+  ],
   "dell": [],
   "lighting": [],
   "nuki": [
