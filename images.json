@@ -54,16 +54,26 @@
   "oskarshamn": [],
   "dining": [],
   "pax8": [],
-  "pax3": [],
+  "pax3": [
+    "img/pax3-1.webp",
+    "img/pax3-2.webp"
+  ],
   "brimnes": [],
   "slakt1": [],
   "slakt2": [],
   "alex": [],
   "kallax": [],
   "vihals": [],
-  "bergig": [],
+  "bergig": [
+    "img/bergig-1.webp",
+    "img/bergig-2.webp",
+    "img/bergig-3.webp"
+  ],
   "bissa": [],
-  "nysjon": [],
+  "nysjon": [
+    "img/nysjon-1.webp",
+    "img/nysjon-2.webp"
+  ],
   "palms": [],
   "ficus": [],
   "philodendron": []
