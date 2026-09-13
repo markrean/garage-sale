@@ -34,7 +34,9 @@
   "kitchenaid": [],
   "ninja": [],
   "toasters": [],
-  "roborock": [],
+  "roborock": [
+    "img/roborock-1.webp"
+  ],
   "dyson": [],
   "washer": [],
   "dryer": [],
