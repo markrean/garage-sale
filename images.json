@@ -25,7 +25,9 @@
     "img/oven-1.webp",
     "img/oven-2.webp"
   ],
-  "fridge": [],
+  "fridge": [
+    "img/fridge-1.webp"
+  ],
   "kingfridge": [],
   "microwave": [
     "img/microwave-1.webp",
