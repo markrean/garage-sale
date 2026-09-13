@@ -18,19 +18,10 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;800&display=swap">
 <style>
   :root{
+    color-scheme:light;
     --paper:#FFFFFF; --panel:#F1F3F7; --ink:#0B0F1A; --muted:#525C6E; --line:#DCE1EA;
     --blue:#0F3DC4; --blue-deep:#0A2B8E; --blue-pale:#E4EAFB; --on-blue:#FFFFFF;
     --font:"Heebo", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
-  }
-  @media (prefers-color-scheme: dark){
-    :root:not([data-theme="light"]){
-      --paper:#080B12; --panel:#10151F; --ink:#EEF1F7; --muted:#96A0B3; --line:#242C3A;
-      --blue:#4F7DF3; --blue-deep:#7DA2FF; --blue-pale:#121D36; --on-blue:#06101F;
-    }
-  }
-  :root[data-theme="dark"]{
-    --paper:#080B12; --panel:#10151F; --ink:#EEF1F7; --muted:#96A0B3; --line:#242C3A;
-    --blue:#4F7DF3; --blue-deep:#7DA2FF; --blue-pale:#121D36; --on-blue:#06101F;
   }
   *{box-sizing:border-box}
   body{background:var(--paper);color:var(--ink);font-family:var(--font);line-height:1.5;padding-inline:0;padding-block:0 60px;-webkit-font-smoothing:antialiased}
@@ -52,7 +43,6 @@
   h1{font-weight:800;font-size:clamp(2.7rem,8vw,5.2rem);line-height:.95;margin:0;letter-spacing:0;text-wrap:balance;color:#fff}
   h1 .hl{color:#fff;background:var(--ink);padding:0 .12em;display:inline-block}
   .hero .lede{margin:24px auto 0;max-width:56ch;font-size:1.1rem;color:rgba(255,255,255,.88);font-weight:400}
-  :root[data-theme="dark"] .hero .lede,html:not([data-theme="light"]) .hero .lede{color:rgba(255,255,255,.9)}
 
   .terms{margin-top:0;display:grid;gap:0;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));border:1px solid var(--line);border-top:0}
   .term{background:var(--panel);border:0;border-inline-end:1px solid var(--line);border-radius:0;padding:18px 20px}
@@ -132,7 +122,6 @@
   footer{margin-top:40px;padding:32px;border:0;border-radius:0;background:var(--ink);color:var(--paper)}
   footer h2{font-size:1.9rem;margin:0 0 10px;font-weight:800;letter-spacing:0}
   footer p{margin:0 0 8px;font-size:1.02rem;color:rgba(255,255,255,.72);font-weight:400;max-width:60ch}
-  :root[data-theme="dark"] footer p,html:not([data-theme="light"]) footer p{color:rgba(255,255,255,.72)}
   .cta{display:flex;flex-wrap:wrap;gap:0;margin-top:18px;border:1px solid rgba(255,255,255,.35);width:fit-content}
   .cta a{text-decoration:none;font-weight:800;font-size:.98rem;border-radius:0;padding:12px 22px;background:none;color:#fff;border:0;border-inline-end:1px solid rgba(255,255,255,.35)}
   .cta a:last-child{border-inline-end:0}
