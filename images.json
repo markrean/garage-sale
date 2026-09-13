@@ -24,7 +24,10 @@
   "oven": [],
   "fridge": [],
   "kingfridge": [],
-  "microwave": [],
+  "microwave": [
+    "img/microwave-1.webp",
+    "img/microwave-2.webp"
+  ],
   "kitchenaid": [],
   "ninja": [],
   "toasters": [],
