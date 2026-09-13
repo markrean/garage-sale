@@ -20,7 +20,11 @@
     "img/philips-1.webp",
     "img/philips-2.webp"
   ],
-  "dishwasher": [],
+  "dishwasher": [
+    "img/dishwasher-3.webp",
+    "img/dishwasher-1.webp",
+    "img/dishwasher-2.webp"
+  ],
   "oven": [
     "img/oven-1.webp",
     "img/oven-2.webp"
