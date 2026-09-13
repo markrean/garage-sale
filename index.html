@@ -199,7 +199,7 @@ const UI = {
     dir:"rtl",
     eyebrow:"מכירת תכולה · נווה שרת, תל אביב",
     title:"גראז׳ סייל - מוכר את כל הבית",
-    lede:"אני עוזב את הדירה, וכל מה שבה מחפש בית חדש. רוב הפריטים נרכשו בחצי השנה–שנה האחרונה ונראים כחדשים. הכול עדיין מורכב ועובד בדירה, אז אפשר לראות הכול בביקור אחד. מי שלוקח כמה פריטים — מקבל מחיר.",
+    lede:"אני עוזב את הדירה, וכל מה שבה מחפש בית חדש. המון פריטים נרכשו בחצי השנה–שנה האחרונה ונראים כחדשים. הכול עדיין מורכב ועובד בדירה, אז אפשר לראות הכול בביקור אחד. מי שלוקח כמה פריטים — מקבל מחיר.",
     terms:[["איסוף עצמי","ההובלה והפירוק על הקונה"],["ביקור אחד","הכול מורכב בדירה וניתן לראות בפעולה"],["הנחה לחבילה","לוקחים כמה פריטים? נסגור מחיר"]],
     all:"הכול",
     cats:{elec:"אלקטרוניקה",smart:"בית חכם",kitchen:"מטבח",laundry:"כביסה וניקיון",furniture:"ריהוט",plants:"צמחים"},
@@ -225,7 +225,7 @@ const UI = {
     dir:"ltr",
     eyebrow:"Распродажа обстановки · Неве Шарет, Тель-Авив",
     title:"Гараж-сейл - продаю всё из квартиры",
-    lede:"Я съезжаю с квартиры, и всё, что в ней, ищет новый дом. Большинство вещей куплено за последние полгода–год и выглядит как новое. Всё ещё собрано и работает в квартире — можно посмотреть всё за один визит. Берёте несколько вещей — договоримся о цене.",
+    lede:"Я съезжаю с квартиры, и всё, что в ней, ищет новый дом. Много вещей куплено за последние полгода–год, и выглядят они как новые. Всё ещё собрано и работает в квартире — можно посмотреть всё за один визит. Берёте несколько вещей — договоримся о цене.",
     terms:[["Самовывоз","Перевозка и разборка — на покупателе"],["Приходите проверить","Всё собрано и работает, можно проверить на месте"],["Скидка за набор","Если берёте несколько вещей — сделаю цену"]],
     all:"Всё",
     cats:{elec:"Электроника",smart:"Умный дом",kitchen:"Кухня",laundry:"Стирка и уборка",furniture:"Мебель",plants:"Растения"},
@@ -251,7 +251,7 @@ const UI = {
     dir:"ltr",
     eyebrow:"Apartment clear-out · Neve Sharett, Tel Aviv",
     title:"Garage sale - selling the whole home",
-    lede:"I'm moving out, and everything in the apartment is looking for a new home. Most of it was bought in the last six months to a year and looks new. It's all still installed and running, so you can see everything in one visit. Take a few items and we'll agree on a price.",
+    lede:"I'm moving out, and everything in the apartment is looking for a new home. A lot of it was bought in the last six months to a year and looks new. It's all still installed and running, so you can see everything in one visit. Take a few items and we'll agree on a price.",
     terms:[["Self pickup","Transport and disassembly are on the buyer"],["One visit","Everything is installed and can be seen working"],["Bundle discount","Taking several items? We'll make a price"]],
     all:"All",
     cats:{elec:"Electronics",smart:"Smart home",kitchen:"Kitchen",laundry:"Laundry & cleaning",furniture:"Furniture",plants:"Plants"},
@@ -612,7 +612,14 @@ const ITEMS = [
    ====================================================================== */
 const SOLD_BASE = [];
 
-let lang = "he";
+const LANGS = ["he","ru","en"];
+let lang = (() => {
+  try{
+    const q = new URLSearchParams(location.search).get("lang");
+    if(q && LANGS.includes(q.toLowerCase())) return q.toLowerCase();
+  }catch(e){}
+  return "he";
+})();
 let active = "all";
 let sold = new Set(SOLD_BASE);
 let adminMode = false;
@@ -744,7 +751,15 @@ document.addEventListener("click", e => {
   const chip = e.target.closest(".chip");
   if(chip){ setCat(chip.dataset.cat); return; }
   const lng = e.target.closest("#langs button");
-  if(lng){ lang = lng.dataset.lang; paintChrome(); render(); }
+  if(lng){
+    lang = lng.dataset.lang;
+    try{
+      const u = new URL(location.href);
+      u.searchParams.set("lang", lang);
+      history.replaceState(null, "", u);
+    }catch(e){}
+    paintChrome(); render();
+  }
 });
 function setCat(v){
   active = v;
