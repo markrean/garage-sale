@@ -1,5 +1,10 @@
 {
-  "sonos": [],
+  "sonos": [
+    "img/sonos-1.webp",
+    "img/sonos-2.webp",
+    "img/sonos-3.webp",
+    "img/sonos-4.webp"
+  ],
   "symfonisk": [],
   "lgtv": [],
   "ps5": [
