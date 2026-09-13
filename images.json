@@ -6,7 +6,10 @@
   "dell": [],
   "lighting": [],
   "nuki": [],
-  "aqara": [],
+  "aqara": [
+    "img/aqara-1.webp",
+    "img/aqara-2.webp"
+  ],
   "philips": [
     "img/philips-3.webp",
     "img/philips-1.webp",
