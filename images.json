@@ -21,7 +21,10 @@
     "img/philips-2.webp"
   ],
   "dishwasher": [],
-  "oven": [],
+  "oven": [
+    "img/oven-1.webp",
+    "img/oven-2.webp"
+  ],
   "fridge": [],
   "kingfridge": [],
   "microwave": [
