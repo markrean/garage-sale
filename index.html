@@ -1,0 +1,814 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="מוכר את כל תכולת הדירה — 40 פריטים, כ-50% מתחת למחיר החנות. נווה שרת, תל אביב.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="גראז׳ סייל - מוכר את כל הבית">
+<meta property="og:description" content="40 פריטים מתכולת דירה בנווה שרת, תל אביב — כ-50% מתחת למחיר החנות.">
+<meta property="og:image" content="img/og.jpg">
+<meta property="og:locale" content="he_IL">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8F%A0%3C/text%3E%3C/svg%3E">
+<style>body{margin:0}</style>
+<title>גראז׳ סייל — גרסת פוסטר</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;800&display=swap">
+<style>
+  :root{
+    --paper:#FFFFFF; --panel:#F1F3F7; --ink:#0B0F1A; --muted:#525C6E; --line:#DCE1EA;
+    --blue:#0F3DC4; --blue-deep:#0A2B8E; --blue-pale:#E4EAFB; --on-blue:#FFFFFF;
+    --font:"Heebo", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#080B12; --panel:#10151F; --ink:#EEF1F7; --muted:#96A0B3; --line:#242C3A;
+      --blue:#4F7DF3; --blue-deep:#7DA2FF; --blue-pale:#121D36; --on-blue:#06101F;
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#080B12; --panel:#10151F; --ink:#EEF1F7; --muted:#96A0B3; --line:#242C3A;
+    --blue:#4F7DF3; --blue-deep:#7DA2FF; --blue-pale:#121D36; --on-blue:#06101F;
+  }
+  *{box-sizing:border-box}
+  body{background:var(--paper);color:var(--ink);font-family:var(--font);line-height:1.5;padding-inline:0;padding-block:0 60px;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1180px;margin-inline:auto;padding-inline:16px}
+  button{font-family:inherit}
+  :focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+
+  .langbar{display:flex;justify-content:flex-end;padding-block:10px 10px}
+  .langs{display:flex;gap:0;background:none;border:1px solid var(--line);border-radius:0;padding:0}
+  .langs button{font-size:.84rem;font-weight:700;cursor:pointer;border:0;border-radius:0;background:none;color:var(--muted);padding:6px 14px}
+  .langs button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+
+  .hero{
+    background:var(--blue);color:var(--on-blue);border-radius:0;text-align:center;
+    padding:clamp(30px,6vw,64px) 16px;margin-inline:calc(50% - 50vw);margin-top:4px;
+  }
+  .hero > *{max-width:1148px;margin-inline:auto}
+  .hero .eyebrow{font-size:.84rem;letter-spacing:0;text-transform:uppercase;color:rgba(255,255,255,.82);font-weight:700;margin:0 0 18px}
+  h1{font-weight:800;font-size:clamp(2.7rem,8vw,5.2rem);line-height:.95;margin:0;letter-spacing:0;text-wrap:balance;color:#fff}
+  h1 .hl{color:#fff;background:var(--ink);padding:0 .12em;display:inline-block}
+  .hero .lede{margin:24px auto 0;max-width:56ch;font-size:1.1rem;color:rgba(255,255,255,.88);font-weight:400}
+  :root[data-theme="dark"] .hero .lede,html:not([data-theme="light"]) .hero .lede{color:rgba(255,255,255,.9)}
+
+  .terms{margin-top:0;display:grid;gap:0;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));border:1px solid var(--line);border-top:0}
+  .term{background:var(--panel);border:0;border-inline-end:1px solid var(--line);border-radius:0;padding:18px 20px}
+  .term:last-child{border-inline-end:0}
+  .term b{display:block;font-size:1.05rem;font-weight:800;color:var(--ink);margin-bottom:4px;letter-spacing:0}
+  .term span{font-size:.93rem;color:var(--muted)}
+
+  .controls{position:sticky;top:0;z-index:5;background:var(--paper);padding-block:12px 12px;margin-top:24px;border-bottom:2px solid var(--ink)}
+  .chips{display:flex;flex-wrap:wrap;gap:0;border:1px solid var(--line);width:fit-content}
+  .chip{font-size:.9rem;font-weight:700;cursor:pointer;background:none;color:var(--muted);border:0;border-inline-end:1px solid var(--line);border-radius:0;padding:8px 16px}
+  .chip:last-child{border-inline-end:0}
+  .chip .c{font-size:.76rem;margin-inline-start:5px;font-variant-numeric:tabular-nums;opacity:.75}
+  .chip:hover{color:var(--ink);background:var(--blue-pale)}
+  .chip[aria-pressed="true"]{background:var(--blue);color:var(--on-blue)}
+  .searchrow{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:10px}
+  .search{flex:1 1 240px}
+  .search input,.catsel{width:100%;font:inherit;font-size:.95rem;font-weight:600;color:var(--ink);background:var(--panel);border:1px solid var(--line);border-radius:0;padding:10px 14px}
+  .search input::placeholder{color:var(--muted);font-weight:400}
+  .catsel{display:none;flex:0 0 44%;max-width:44%;appearance:none;cursor:pointer}
+  .count{font-size:.86rem;color:var(--muted);font-variant-numeric:tabular-nums;font-weight:600}
+  .count b{color:var(--ink);font-weight:800}
+  @media (max-width:640px){
+    .chips{display:none}
+    .catsel{display:block;flex:1 1 100%;max-width:100%}
+    .searchrow{flex-wrap:wrap;gap:8px;margin-top:0}
+    .search{flex:1 1 100%;min-width:0}
+    .count{display:none}
+    .cta{flex-direction:column;width:100%}
+    .cta a{width:100%;text-align:center;border-inline-end:0;border-block-end:1px solid rgba(255,255,255,.35)}
+    .cta a:last-child{border-block-end:0}
+  }
+
+  .adminbar{margin-top:10px;padding:9px 14px;border:2px dashed var(--blue);border-radius:0;background:var(--blue-pale);color:var(--ink);font-size:.87rem;display:flex;gap:9px;flex-wrap:wrap;align-items:center}
+  .adminbar b{font-weight:800}
+
+  .grid{display:grid;gap:20px;margin-top:24px;grid-template-columns:repeat(auto-fill,minmax(300px,1fr))}
+  .item{background:var(--paper);border:1px solid var(--line);border-radius:0;cursor:pointer;display:flex;flex-direction:column;overflow:hidden;position:relative}
+  .item.is-sold{opacity:.55}
+  .item:hover{border-color:var(--blue)}
+  .item .shot{cursor:zoom-in}
+  .shot{position:relative;aspect-ratio:1/1;width:100%;background:var(--panel);border:0;padding:0;display:block;overflow:hidden;cursor:zoom-in}
+  .shot img{width:100%;height:100%;object-fit:cover;display:block;max-width:100%}
+  .shot.empty{cursor:default;display:grid;place-items:center;color:var(--muted)}
+  .shot.empty span{font-size:.85rem;font-weight:600}
+  .shot .pcount{position:absolute;inset-block-end:10px;inset-inline-end:10px;background:var(--ink);color:var(--paper);font-size:.74rem;font-weight:700;border-radius:0;padding:3px 9px}
+  .soldtag{position:absolute;inset-block-start:0;inset-inline-start:0;z-index:2;background:var(--ink);color:var(--paper);font-size:.8rem;font-weight:800;border-radius:0;padding:6px 14px;letter-spacing:0;text-transform:uppercase}
+  .pricebar{display:flex;align-items:baseline;gap:10px;background:var(--blue);color:var(--on-blue);padding:11px 18px;font-variant-numeric:tabular-nums}
+  .item.is-sold .pricebar{background:var(--ink)}
+  .pricebar .now{font-size:1.6rem;font-weight:800;letter-spacing:0}
+  .pricebar .was{font-size:.88rem;font-weight:500;opacity:.78;text-decoration:line-through}
+  .pricebar .off{margin-inline-start:auto;font-size:.8rem;font-weight:700;border:1px solid currentColor;padding:2px 8px}
+  .body{padding:16px 18px 20px;display:flex;flex-direction:column;gap:8px;flex:1}
+  .item .cat{font-size:.74rem;letter-spacing:0;text-transform:uppercase;font-weight:700;color:var(--muted)}
+  .item h3{font-weight:800;font-size:1.32rem;line-height:1.18;margin:0;letter-spacing:0;text-wrap:balance}
+  .item p{margin:0;font-size:.93rem;color:var(--muted);font-weight:400}
+  .more{align-self:flex-start;margin-top:auto;cursor:pointer;background:none;color:var(--blue-deep);border:0;padding:0;font-size:.92rem;font-weight:800;text-decoration:underline;text-underline-offset:4px}
+  .markbtn{margin-top:12px;font-size:.83rem;font-weight:700;cursor:pointer;background:var(--panel);color:var(--ink);border:1px solid var(--line);border-radius:0;padding:6px 12px}
+  .empty-msg{padding:40px 2px;color:var(--muted)}
+
+  dialog{border:2px solid var(--ink);border-radius:0;background:var(--paper);color:var(--ink);padding:0;max-width:660px;width:calc(100% - 28px);box-shadow:none}
+  dialog::backdrop{background:rgba(8,12,24,.85)}
+  .sheet{padding:26px}
+  .sheet .cat{font-size:.74rem;letter-spacing:0;text-transform:uppercase;font-weight:700;color:var(--muted)}
+  .sheet h2{margin:8px 0 16px;font-size:1.9rem;font-weight:800;line-height:1.12;letter-spacing:0;text-wrap:balance}
+  .sheet .full{margin:0;font-size:1rem;font-weight:400;white-space:pre-line}
+  .sheet .pricebar{margin-top:22px}
+  .thumbs{display:flex;gap:6px;flex-wrap:wrap;margin-top:18px}
+  .thumbs button{border:1px solid var(--line);border-radius:0;overflow:hidden;padding:0;cursor:zoom-in;background:none;width:84px;height:63px}
+  .thumbs img{width:100%;height:100%;object-fit:cover;display:block}
+  .closex{position:absolute;inset-block-start:8px;inset-inline-end:12px;background:none;border:0;font-size:1.7rem;line-height:1;color:var(--muted);cursor:pointer}
+  #lightbox{max-width:min(1000px,100%);background:transparent;border:0}
+  #lightbox .lbwrap{display:grid;gap:12px;justify-items:center}
+  #lightbox img{max-width:100%;max-height:76vh;border-radius:0;display:block}
+  .lbbar{display:flex;align-items:center;gap:14px;color:#fff;font-size:.9rem;font-weight:700}
+  .lbbar button{background:rgba(255,255,255,.18);color:#fff;border:0;border-radius:0;width:44px;height:44px;font-size:1.3rem;cursor:pointer}
+
+  footer{margin-top:40px;padding:32px;border:0;border-radius:0;background:var(--ink);color:var(--paper)}
+  footer h2{font-size:1.9rem;margin:0 0 10px;font-weight:800;letter-spacing:0}
+  footer p{margin:0 0 8px;font-size:1.02rem;color:rgba(255,255,255,.72);font-weight:400;max-width:60ch}
+  :root[data-theme="dark"] footer p,html:not([data-theme="light"]) footer p{color:rgba(255,255,255,.72)}
+  .cta{display:flex;flex-wrap:wrap;gap:0;margin-top:18px;border:1px solid rgba(255,255,255,.35);width:fit-content}
+  .cta a{text-decoration:none;font-weight:800;font-size:.98rem;border-radius:0;padding:12px 22px;background:none;color:#fff;border:0;border-inline-end:1px solid rgba(255,255,255,.35)}
+  .cta a:last-child{border-inline-end:0}
+  .cta a:first-child{background:var(--blue)}
+  .who{color:#fff;font-weight:800;font-size:1.1rem;margin-top:20px}
+  .fine{margin-top:14px;font-size:.82rem;color:rgba(255,255,255,.6)}
+  @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+</head>
+<body>
+<div class="wrap">
+  <div class="langbar">
+    <div class="langs" id="langs" role="group">
+      <button type="button" data-lang="he" aria-pressed="true">עברית</button>
+      <button type="button" data-lang="ru" aria-pressed="false">Русский</button>
+      <button type="button" data-lang="en" aria-pressed="false">English</button>
+    </div>
+  </div>
+
+  <header class="hero">
+    <p class="eyebrow" id="t-eyebrow"></p>
+    <h1 id="t-title"></h1>
+    <p class="lede" id="t-lede"></p>
+  </header>
+  <div class="terms" id="t-terms"></div>
+
+  <div class="controls">
+    <div class="chips" id="chips"></div>
+    <div class="searchrow">
+      <select class="catsel" id="catsel" aria-label="category"></select>
+      <div class="search"><input id="q" type="search" autocomplete="off"></div>
+      <span class="count" id="count"></span>
+    </div>
+    <div class="adminbar" id="adminbar" hidden>
+      <b id="t-admin"></b>
+      <span class="status" id="adminstatus"></span>
+    </div>
+  </div>
+
+  <div class="grid" id="grid"></div>
+  <p class="empty-msg" id="empty" hidden></p>
+
+  <footer>
+    <h2 id="t-ctitle"></h2>
+    <p id="t-ctext"></p>
+    <div class="cta">
+      <a id="t-wa" href="https://wa.me/972544497789">WhatsApp</a>
+      <a class="ghost" id="t-tg" href="https://t.me/+972544497789">Telegram</a>
+      <a class="ghost" id="t-tel" href="tel:+972544497789">054-44-97-789</a>
+    </div>
+    <p class="who" id="t-who"></p>
+    <p class="fine" id="t-fine"></p>
+  </footer>
+</div>
+
+<dialog id="sheet"><button class="closex" id="sheetclose" aria-label="close">×</button><div class="sheet" id="sheetbody"></div></dialog>
+<dialog id="lightbox"><div class="lbwrap">
+  <img id="lbimg" alt="">
+  <div class="lbbar">
+    <button type="button" id="lbprev" aria-label="prev">‹</button>
+    <span id="lbcount"></span>
+    <button type="button" id="lbnext" aria-label="next">›</button>
+    <button type="button" id="lbclose" aria-label="close">×</button>
+  </div>
+</div></dialog>
+
+<script>
+/* ======================================================================
+   תמונות: כל פריט מקבל מערך imgs עם כתובות תמונה.
+   כרגע ריק לכל הפריטים חוץ מהסונוס, שם יש 3 תמונות הדגמה
+   כדי להראות איך הלייטבוקס והמעבר בין תמונות עובדים.
+   ====================================================================== */
+
+const CATS = ["elec","smart","kitchen","laundry","furniture","plants"];
+
+const UI = {
+  he:{
+    dir:"rtl",
+    eyebrow:"מכירת תכולה · נווה שרת, תל אביב",
+    title:"גראז׳ סייל - מוכר את כל הבית",
+    lede:"אני עוזב את הדירה, וכל מה שבה מחפש בית חדש. רוב הפריטים נרכשו בחצי השנה–שנה האחרונה ונראים כחדשים. הכול עדיין מורכב ועובד בדירה, אז אפשר לראות הכול בביקור אחד. מי שלוקח כמה פריטים — מקבל מחיר.",
+    terms:[["איסוף עצמי","ההובלה והפירוק על הקונה"],["ביקור אחד","הכול מורכב בדירה וניתן לראות בפעולה"],["הנחה לחבילה","לוקחים כמה פריטים? נסגור מחיר"]],
+    all:"הכול",
+    cats:{elec:"אלקטרוניקה",smart:"בית חכם",kitchen:"מטבח",laundry:"כביסה וניקיון",furniture:"ריהוט",plants:"צמחים"},
+    search:"חיפוש: מקרר, PAX, סונוס…",
+    shown:(n,t)=>`מוצגים <b>${n}</b> מתוך ${t} פריטים`,
+    more:"פרטים נוספים",
+    sold:"נמכר",
+    noimg:"תמונות בקרוב",
+    photos:n=>`${n} תמונות`,
+    markSold:"סמן כנמכר",
+    markAvail:"החזר למכירה",
+    admin:"מצב עריכה",
+    adminOn:"אפשר לסמן פריטים כנמכרו. העדכון נשמר ומופיע לכל מי שפותח את העמוד.",
+    adminOff:"העריכה לא זמינה בתצוגה הזו — פתחו את העמוד מהחשבון שלכם.",
+    ctitle:"מעוניינים?",
+    ctext:"כתבו לי איזה פריט מעניין אתכם ומתי נוח לכם לבוא לראות. אני עונה לכולם, לפי סדר ההודעות.",
+    who:"מארק · נווה שרת, תל אביב",
+    fine:"״שווי בחנות״ הוא מחיר הקנייה או המחיר הנוכחי בחנות. המכירה היא כמות שהוא, ואפשר לבדוק כל פריט לפני שסוגרים.",
+    curr:n=>n.toLocaleString("he-IL")+" ₪",
+    approx:"כ־", was:"בחנות", off:"הנחה"
+  },
+  ru:{
+    dir:"ltr",
+    eyebrow:"Распродажа обстановки · Неве Шарет, Тель-Авив",
+    title:"Гараж-сейл - продаю всё из квартиры",
+    lede:"Я съезжаю с квартиры, и всё, что в ней, ищет новый дом. Большинство вещей куплено за последние полгода–год и выглядит как новое. Всё ещё собрано и работает в квартире — можно посмотреть всё за один визит. Берёте несколько вещей — договоримся о цене.",
+    terms:[["Самовывоз","Перевозка и разборка — на покупателе"],["Один визит","Всё собрано и работает, можно проверить на месте"],["Скидка за набор","Берёте несколько вещей — сделаю цену"]],
+    all:"Всё",
+    cats:{elec:"Электроника",smart:"Умный дом",kitchen:"Кухня",laundry:"Стирка и уборка",furniture:"Мебель",plants:"Растения"},
+    search:"Поиск: холодильник, PAX, Sonos…",
+    shown:(n,t)=>`Показано <b>${n}</b> из ${t}`,
+    more:"Подробнее",
+    sold:"Продано",
+    noimg:"Фото скоро",
+    photos:n=>`${n} фото`,
+    markSold:"Отметить проданным",
+    markAvail:"Вернуть в продажу",
+    admin:"Режим редактирования",
+    adminOn:"Можно отмечать проданные позиции. Изменение сохраняется и видно всем, кто открывает страницу.",
+    adminOff:"Редактирование недоступно в этом просмотре — откройте страницу из своей учётной записи.",
+    ctitle:"Заинтересовало?",
+    ctext:"Напишите, какая вещь интересует и когда вам удобно приехать посмотреть. Отвечаю всем по порядку.",
+    who:"Марк · Неве Шарет, Тель-Авив",
+    fine:"«Цена в магазине» — это цена покупки или текущая цена в магазине. Продажа как есть, каждую вещь можно проверить до сделки.",
+    curr:n=>n.toLocaleString("ru-RU")+" ₪",
+    approx:"ок. ", was:"в магазине", off:"скидка"
+  },
+  en:{
+    dir:"ltr",
+    eyebrow:"Apartment clear-out · Neve Sharett, Tel Aviv",
+    title:"Garage sale - selling the whole home",
+    lede:"I'm moving out, and everything in the apartment is looking for a new home. Most of it was bought in the last six months to a year and looks new. It's all still installed and running, so you can see everything in one visit. Take a few items and we'll agree on a price.",
+    terms:[["Self pickup","Transport and disassembly are on the buyer"],["One visit","Everything is installed and can be seen working"],["Bundle discount","Taking several items? We'll make a price"]],
+    all:"All",
+    cats:{elec:"Electronics",smart:"Smart home",kitchen:"Kitchen",laundry:"Laundry & cleaning",furniture:"Furniture",plants:"Plants"},
+    search:"Search: fridge, PAX, Sonos…",
+    shown:(n,t)=>`Showing <b>${n}</b> of ${t} items`,
+    more:"More details",
+    sold:"Sold",
+    noimg:"Photos coming soon",
+    photos:n=>`${n} photos`,
+    markSold:"Mark as sold",
+    markAvail:"Back on sale",
+    admin:"Edit mode",
+    adminOn:"You can mark items as sold. The change is saved and shows for everyone who opens the page.",
+    adminOff:"Editing isn't available in this view — open the page from your own account.",
+    ctitle:"Interested?",
+    ctext:"Message me which item you're after and when it suits you to come and see it. I answer everyone, in order.",
+    who:"Mark · Neve Sharett, Tel Aviv",
+    fine:"“Retail value” is the purchase price or the current store price. Everything is sold as is, and you can inspect any item before we close.",
+    curr:n=>n.toLocaleString("en-US")+" ₪",
+    approx:"approx. ", was:"retail", off:"off"
+  }
+};
+
+const ITEMS = [
+/* ---------------- אלקטרוניקה ---------------- */
+{id:"sonos", c:"elec", p:4500, o:9297, imgs:[],
+ he:{n:"מערכת סאונד Sonos מלאה",s:"סאב Sub Gen 4, סאונדבאר Arc Ultra וזוג One SL עם מעמדים. לבן.",
+   d:"מערכת הסראונד המלאה של Sonos בצבע לבן, מוגדרת ועובדת בסלון — אפשר לשמוע אותה לפני שקונים.\n• סאונדבאר Arc Ultra: מחיר בחנות - 3,899 ₪\n• סאב-וופר Sub Gen 4: מחיר בחנות - 3,499 ₪\n• זוג רמקולי צד One SL עם מעמדים ייעודיים: מחיר בחנות - 1,899 ₪\nהכול מחובר לרשת ולטלוויזיה, כולל הכבלים והמעמדים. אפשר לקחת את המערכת כולה, ועדיפות למי שלוקח הכול."},
+ ru:{n:"Полная аудиосистема Sonos",s:"Сабвуфер Sub Gen 4, саундбар Arc Ultra и пара One SL со стойками. Белая.",
+   d:"Полная система Sonos в белом цвете, настроена и работает в гостиной — можно послушать перед покупкой.\n• Саундбар Arc Ultra: цена в магазине - 3 899 ₪\n• Сабвуфер Sub Gen 4: цена в магазине - 3 499 ₪\n• Пара тыловых One SL с фирменными стойками: цена в магазине - 1 899 ₪\nВсё подключено к сети и телевизору, включая кабели и стойки. Приоритет тому, кто забирает систему целиком."},
+ en:{n:"Complete Sonos sound system",s:"Sub Gen 4, Arc Ultra soundbar and a pair of One SL with stands. White.",
+   d:"The full Sonos surround system in white, set up and running in the living room — you can hear it before you buy.\n• Arc Ultra soundbar: retail price - ₪3,899\n• Sub Gen 4 subwoofer: retail price - ₪3,499\n• Pair of One SL rears with dedicated stands: retail price - ₪1,899\nEverything is connected to the network and the TV, cables and stands included. Preference to whoever takes the whole system."}},
+
+{id:"symfonisk", c:"elec", p:400, o:895, imgs:[],
+ he:{n:"רמקול Symfonisk Frame x Sonos",s:"רמקול-תמונה לתלייה על הקיר, אפור.",
+   d:"רמקול חכם של איקאה בשיתוף Sonos, בנוי כמסגרת תמונה לתלייה על הקיר. אפור.\nעובד כרמקול עצמאי או כחלק ממערכת הסונוס שבבית, ונשלט מאותה אפליקציה. כולל את ערכת התלייה."},
+ ru:{n:"Колонка Symfonisk Frame x Sonos",s:"Колонка-картина для стены, серая.",
+   d:"Умная колонка IKEA совместно с Sonos, выполненная как настенная картина. Серая.\nРаботает отдельно или как часть системы Sonos, управляется из того же приложения. Крепление в комплекте."},
+ en:{n:"Symfonisk Frame x Sonos speaker",s:"Wall-mounted picture-frame speaker, grey.",
+   d:"IKEA's smart speaker made with Sonos, built as a picture frame for the wall. Grey.\nWorks on its own or as part of the Sonos system, controlled from the same app. Wall mount included."}},
+
+{id:"lgtv", c:"elec", p:800, o:1800, imgs:[],
+ he:{n:"טלוויזיה LG 65״ 4K UHD",s:"מסך 65 אינץ׳, 4K UHD, כולל שלט.",
+   d:"טלוויזיה LG בגודל 65 אינץ׳, רזולוציית 4K UHD, עובדת מצוין ובלי פגמים במסך. כולל שלט ומעמד שולחני.\nמתאימה גם לחיבור למערכת הסאונד שברשימה."},
+ ru:{n:"Телевизор LG 65″ 4K UHD",s:"Экран 65 дюймов, 4K UHD, с пультом.",
+   d:"Телевизор LG 65 дюймов, разрешение 4K UHD, работает отлично, дефектов на экране нет. Пульт и настольная подставка в комплекте.\nХорошо подходит к аудиосистеме из этого списка."},
+ en:{n:"LG 65″ 4K UHD TV",s:"65-inch screen, 4K UHD, remote included.",
+   d:"LG 65-inch TV, 4K UHD, works perfectly with no screen defects. Remote and table stand included.\nPairs with the sound system listed here."}},
+
+{id:"ps5", c:"elec", p:1200, o:2479, imgs:[],
+ he:{n:"PlayStation 5 עם כונן דיסקים",s:"כולל 2 שלטים לבנים וכל הכבלים.",
+   d:"קונסולת Sony PlayStation 5 בגרסה עם כונן דיסקים, בצבע לבן.\nכוללת 2 שלטים לבנים, כבל HDMI, כבל חשמל וכבל טעינה. עובדת מצוין, בלי תקלות."},
+ ru:{n:"PlayStation 5 с дисководом",s:"Два белых геймпада и все кабели.",
+   d:"Консоль Sony PlayStation 5 в версии с дисководом, белая.\nВ комплекте 2 белых геймпада, кабель HDMI, кабель питания и кабель зарядки. Работает без нареканий."},
+ en:{n:"PlayStation 5 with disc drive",s:"Two white controllers and all cables.",
+   d:"Sony PlayStation 5, disc drive edition, white.\nIncludes 2 white controllers, HDMI cable, power cable and charging cable. Works perfectly, no faults."}},
+
+{id:"dell", c:"elec", p:800, o:1598, imgs:[],
+ he:{n:"2 מסכי Dell U2422H 24״",s:"צבע כסוף, מעמד מתכוונן, מתאימים לעמדת עבודה.",
+   d:"זוג מסכי Dell UltraSharp U2422H בגודל 24 אינץ׳, צבע כסוף.\nמעמד שמתכוונן לגובה, להטיה ולסיבוב למצב אנכי, חיבורי HDMI ו-DisplayPort ורכזת USB. אפשר לקחת אחד או את שניהם."},
+ ru:{n:"2 монитора Dell U2422H 24″",s:"Серебристые, регулируемая стойка, для рабочего места.",
+   d:"Пара мониторов Dell UltraSharp U2422H, 24 дюйма, серебристые.\nСтойка с регулировкой высоты, наклона и поворотом в вертикальный режим, разъёмы HDMI и DisplayPort, USB-хаб. Можно взять один или оба."},
+ en:{n:"2× Dell U2422H 24″ monitors",s:"Silver, adjustable stand, good desk pair.",
+   d:"A pair of Dell UltraSharp U2422H 24-inch monitors in silver.\nHeight, tilt and pivot adjustable stand, HDMI and DisplayPort inputs, USB hub. Take one or both."}},
+
+/* ---------------- בית חכם ---------------- */
+{id:"lighting", c:"smart", p:3500, o:7691, imgs:[],
+ he:{n:"ערכת תאורה חכמה לכל הבית",s:"Apple TV כרכזת, Dirigera, פאנלים, Philips Hue, 8 שלטים.",
+   d:"כל התאורה החכמה של הדירה, מוכנה להעברה:\n• Apple TV 4K עם שלט, משמש גם כרכזת לבית חכם: מחיר בחנות - 1,049 ₪\n• רכזת איקאה Dirigera: מחיר בחנות - 450 ₪\n• 2 פאנלי LED‏ Float 30×30 ס״מ: מחיר בחנות - 530 ₪\n• פאנל LED‏ Float 30×90 ס״מ: מחיר בחנות - 595 ₪\n• פאנל LED‏ Gunnarp 40×40 ס״מ: מחיר בחנות - 465 ₪\n• 3 מנורות תלייה Nymane: מחיר בחנות - 1,035 ₪\n• גוף תאורה לאמבטיה Philips Hue Adore: מחיר בחנות - 1,200 ₪\n• 2 מנורות תקרה Holjes זכוכית וכרום + 2 נורות Hue צבעוניות 800lm: מחיר בחנות - 629 ₪\n• 2 ספוטים שקועים Mittled: מחיר בחנות - 98 ₪\n• 8 שלטים Tradfri ו-Hue: מחיר בחנות - 582 ₪\n• 2 מנורות קריאה ו-2 מנורות קיר Nymane, 4 נורות ספוט איקאה ו-2 נורות ספוט Hue: מחיר בחנות - 1,058 ₪\nרוב הגופים ניתנים לעמעום, עם 3 גווני לבן, והכול אלחוטי ועובד מהאפליקציה או מהשלטים."},
+ ru:{n:"Комплект умного света на всю квартиру",s:"Apple TV как хаб, Dirigera, панели, Philips Hue, 8 пультов.",
+   d:"Весь умный свет квартиры, готов к переезду:\n• Apple TV 4K с пультом, работает и как хаб умного дома: цена в магазине - 1 049 ₪\n• Хаб IKEA Dirigera: цена в магазине - 450 ₪\n• 2 LED-панели Float 30×30 см: цена в магазине - 530 ₪\n• LED-панель Float 30×90 см: цена в магазине - 595 ₪\n• LED-панель Gunnarp 40×40 см: цена в магазине - 465 ₪\n• 3 подвесных светильника Nymane: цена в магазине - 1 035 ₪\n• Светильник для ванной Philips Hue Adore: цена в магазине - 1 200 ₪\n• 2 потолочных светильника Holjes (стекло и хром) + 2 цветные лампы Hue 800 lm: цена в магазине - 629 ₪\n• 2 встроенных споты Mittled: цена в магазине - 98 ₪\n• 8 пультов Tradfri и Hue: цена в магазине - 582 ₪\n• 2 лампы для чтения и 2 настенные лампы Nymane, 4 споты IKEA и 2 спота Hue: цена в магазине - 1 058 ₪\nБольшинство светильников с диммированием и 3 оттенками белого, всё беспроводное, управляется из приложения или пультами."},
+ en:{n:"Whole-home smart lighting kit",s:"Apple TV hub, Dirigera, panels, Philips Hue, 8 remotes.",
+   d:"All the smart lighting in the apartment, ready to move:\n• Apple TV 4K with remote, also the smart-home hub: retail price - ₪1,049\n• IKEA Dirigera hub: retail price - ₪450\n• 2× Float LED panels 30×30 cm: retail price - ₪530\n• Float LED panel 30×90 cm: retail price - ₪595\n• Gunnarp LED panel 40×40 cm: retail price - ₪465\n• 3× Nymane pendant lamps: retail price - ₪1,035\n• Philips Hue Adore bathroom fixture: retail price - ₪1,200\n• 2× Holjes glass and chrome ceiling lamps + 2 colour Hue bulbs 800lm: retail price - ₪629\n• 2× Mittled recessed spots: retail price - ₪98\n• 8 Tradfri and Hue remotes: retail price - ₪582\n• 2 Nymane reading lamps, 2 Nymane wall lamps, 4 IKEA spot bulbs and 2 Hue spot bulbs: retail price - ₪1,058\nMost fixtures are dimmable with 3 white tones, all wireless, controlled from the app or the remotes."}},
+
+{id:"nuki", c:"smart", p:800, o:1799, imgs:[],
+ he:{n:"מנעול חכם Nuki 3 Pro + Keypad 2",s:"מנעול לבן וכרום, קודן עם טביעת אצבע בשחור.",
+   d:"מנעול חכם Nuki Smart Lock 3 Pro בצבע לבן וכרום, יחד עם קודן Nuki Keypad 2 בשחור עם טביעת אצבע.\nפתיחה מהטלפון, בקוד או בטביעת אצבע, וגם פתיחה אוטומטית בהגעה הביתה. מותקן על הצילינדר מבפנים — הדלת נשארת רגילה מבחוץ, וההתקנה לא דורשת החלפת מנעול."},
+ ru:{n:"Умный замок Nuki 3 Pro + Keypad 2",s:"Замок белый с хромом, кодовая панель с отпечатком, чёрная.",
+   d:"Умный замок Nuki Smart Lock 3 Pro (белый с хромом) вместе с кодовой панелью Nuki Keypad 2 (чёрная, со сканером отпечатка).\nОткрытие с телефона, кодом или отпечатком, есть автоматическое открытие по приходу домой. Ставится на цилиндр изнутри — снаружи дверь остаётся обычной, менять замок не нужно."},
+ en:{n:"Nuki 3 Pro smart lock + Keypad 2",s:"White and chrome lock, black fingerprint keypad.",
+   d:"Nuki Smart Lock 3 Pro in white and chrome, together with the Nuki Keypad 2 in black with fingerprint reader.\nOpen from your phone, by code or by fingerprint, plus auto-unlock on arrival. Mounts on the cylinder from the inside — the door looks unchanged from outside and no lock replacement is needed."}},
+
+{id:"aqara", c:"smart", p:300, o:599, imgs:[],
+ he:{n:"פעמון דלת עם מצלמה Aqara G410",s:"Doorbell Camera Hub, לבן.",
+   d:"פעמון דלת חכם משולב מצלמה, דגם Aqara Doorbell Camera Hub G410 Select בצבע לבן.\nרואים ומדברים עם מי שבדלת מהטלפון, עם הקלטה וזיהוי, והיחידה משמשת גם כרכזת למכשירי Aqara נוספים."},
+ ru:{n:"Дверной звонок с камерой Aqara G410",s:"Doorbell Camera Hub, белый.",
+   d:"Умный дверной звонок со встроенной камерой, модель Aqara Doorbell Camera Hub G410 Select, белый.\nВидео и голосовая связь с тем, кто у двери, прямо с телефона, с записью и распознаванием; устройство также работает хабом для других устройств Aqara."},
+ en:{n:"Aqara G410 video doorbell",s:"Doorbell Camera Hub, white.",
+   d:"Smart video doorbell, Aqara Doorbell Camera Hub G410 Select, white.\nSee and talk to whoever is at the door from your phone, with recording and detection, and the unit doubles as a hub for other Aqara devices."}},
+
+/* ---------------- מטבח ---------------- */
+{id:"philips", c:"kitchen", p:1400, o:2790, imgs:[],
+ he:{n:"מכונת קפה Philips LatteGo 5500",s:"אוטומטית, שחור וכרום. חצי שנה, כחדשה.",
+   d:"מכונת קפה אוטומטית מלאה Philips LatteGo 5500 בצבע שחור וכרום, נרכשה לפני חצי שנה ובמצב של חדשה.\nמבחר משקאות בלחיצת כפתור, מטחנה קרמית מובנית עם דרגות טחינה, ומערכת החלב LatteGo שמתפרקת לשני חלקים ונשטפת במים — בלי צינורות לניקוי."},
+ ru:{n:"Кофемашина Philips LatteGo 5500",s:"Автоматическая, чёрная с хромом. Полгода, как новая.",
+   d:"Полностью автоматическая кофемашина Philips LatteGo 5500, чёрная с хромом, куплена полгода назад, состояние новой.\nМного напитков одной кнопкой, встроенная керамическая кофемолка с настройкой помола и молочная система LatteGo, которая разбирается на две части и моется водой — без трубок."},
+ en:{n:"Philips LatteGo 5500 coffee machine",s:"Fully automatic, black and chrome. Six months old, like new.",
+   d:"Philips LatteGo 5500 fully automatic espresso machine in black and chrome, bought six months ago and in as-new condition.\nA range of drinks at one touch, built-in ceramic grinder with grind settings, and the LatteGo milk system that splits into two parts and rinses under water — no tubes to clean."}},
+
+{id:"dishwasher", c:"kitchen", p:1000, o:2190, imgs:[],
+ he:{n:"מדיח כלים מובנה Bosch",s:"גודל מלא, חזית נירוסטה. שנה, כחדש.",
+   d:"מדיח כלים מובנה של Bosch בגודל מלא (60 ס״מ), חזית נירוסטה. נרכש לפני שנה ובמצב מצוין.\nעובד בדירה ואפשר לראות אותו פועל. הפירוק וההוצאה מהארון על הקונה."},
+ ru:{n:"Встраиваемая посудомойка Bosch",s:"Полноразмерная, фасад нержавейка. Год, как новая.",
+   d:"Встраиваемая посудомоечная машина Bosch полного размера (60 см), фасад из нержавеющей стали. Куплена год назад, состояние отличное.\nРаботает в квартире, можно посмотреть в деле. Демонтаж и вынос из шкафа — на покупателе."},
+ en:{n:"Bosch built-in dishwasher",s:"Full size, stainless front. One year old, like new.",
+   d:"Bosch built-in dishwasher, full size (60 cm), stainless steel front. Bought a year ago, excellent condition.\nStill installed and can be seen running. Removal from the cabinet is on the buyer."}},
+
+{id:"oven", c:"kitchen", p:800, o:1690, imgs:[],
+ he:{n:"תנור אפייה בנוי Bosch",s:"נירוסטה, כולל 2 תבניות ורשת. שנה, כחדש.",
+   d:"תנור אפייה בנוי של Bosch בצבע נירוסטה, נרכש לפני שנה ובמצב של חדש.\nכולל 2 תבניות ורשת. מותקן במטבח וניתן לראות אותו עובד; הפירוק על הקונה."},
+ ru:{n:"Встраиваемая духовка Bosch",s:"Нержавейка, 2 противня и решётка. Год, как новая.",
+   d:"Встраиваемый духовой шкаф Bosch, нержавеющая сталь, куплен год назад, состояние новой.\nВ комплекте 2 противня и решётка. Установлен на кухне, можно посмотреть в работе; демонтаж — на покупателе."},
+ en:{n:"Bosch built-in oven",s:"Stainless steel, 2 trays and a rack. One year old, like new.",
+   d:"Bosch built-in oven in stainless steel, bought a year ago and in as-new condition.\nComes with 2 baking trays and a wire rack. Installed in the kitchen and can be seen working; removal is on the buyer."}},
+
+{id:"fridge", c:"kitchen", p:2000, o:4190, imgs:[],
+ he:{n:"מקרר אלקטרה 4 דלתות, 600 ליטר",s:"מקפיא תחתון, לבן. חצי שנה, כחדש.",
+   d:"מקרר אלקטרה בנפח 600 ליטר, 4 דלתות עם מקפיא תחתון, בצבע לבן. נרכש לפני חצי שנה ובמצב של חדש.\nמקרר גדול למשפחה, שקט, עם מגירות מחולקות ומקפיא נוח. עובד בדירה עד למועד הפינוי."},
+ ru:{n:"Холодильник Electra, 4 двери, 600 л",s:"Нижняя морозилка, белый. Полгода, как новый.",
+   d:"Холодильник Electra на 600 литров, 4 двери, нижняя морозильная камера, белый. Куплен полгода назад, состояние нового.\nБольшой семейный холодильник, тихий, с удобными отделениями и вместительной морозилкой. Работает в квартире до переезда."},
+ en:{n:"Electra 4-door fridge, 600 L",s:"Bottom freezer, white. Six months old, like new.",
+   d:"Electra 600-litre fridge, four doors with bottom freezer, white. Bought six months ago and in as-new condition.\nA large family fridge, quiet, with well-divided drawers and a roomy freezer. Running in the apartment until move-out."}},
+
+{id:"kingfridge", c:"kitchen", p:300, o:698, imgs:[],
+ he:{n:"מקרר משרדי King 90 ליטר",s:"לבן, מתאים לחדר עבודה או משרד.",
+   d:"מקרר קטן King בנפח 90 ליטר, בצבע לבן.\nמתאים לחדר עבודה, למשרד, לסטודיו או כמקרר משקאות נוסף. שקט ועובד מצוין."},
+ ru:{n:"Офисный холодильник King, 90 л",s:"Белый, для кабинета или офиса.",
+   d:"Небольшой холодильник King на 90 литров, белый.\nПодойдёт для кабинета, офиса, студии или как дополнительный холодильник для напитков. Тихий, работает отлично."},
+ en:{n:"King office fridge, 90 L",s:"White, good for a study or office.",
+   d:"Small King fridge, 90 litres, white.\nGood for a home office, a studio, or as an extra drinks fridge. Quiet and works perfectly."}},
+
+{id:"microwave", c:"kitchen", p:250, o:540, imgs:[],
+ he:{n:"מיקרוגל סמסונג 32 ליטר",s:"ענק, שחור ונירוסטה.",
+   d:"מיקרוגל Samsung גדול בנפח 32 ליטר, בצבע שחור ונירוסטה.\nחלל פנימי גדול שמכיל צלחות גדולות, עובד מצוין."},
+ ru:{n:"Микроволновка Samsung, 32 л",s:"Большая, чёрная с нержавейкой.",
+   d:"Большая микроволновая печь Samsung на 32 литра, чёрная с нержавеющей сталью.\nВместительная камера — помещаются большие тарелки, работает отлично."},
+ en:{n:"Samsung microwave, 32 L",s:"Large, black and stainless steel.",
+   d:"Large 32-litre Samsung microwave in black and stainless steel.\nRoomy cavity that fits big plates, works perfectly."}},
+
+{id:"kitchenaid", c:"kitchen", p:1200, o:2490, imgs:[],
+ he:{n:"מיקסר KitchenAid Artisan",s:"שחור, ערכה מלאה עם הרבה אביזרים.",
+   d:"מיקסר שולחני KitchenAid Artisan בצבע שחור, ערכה מלאה עם הרבה אביזרים — וו לישה, מטרפה, מערבל וקערה.\nהמכונה שעושה בצקים, קרמים וקצפות בלי מאמץ, ונראית טוב על השיש."},
+ ru:{n:"Миксер KitchenAid Artisan",s:"Чёрный, полный набор с насадками.",
+   d:"Настольный миксер KitchenAid Artisan, чёрный, полный комплект с насадками — крюк для теста, венчик, лопатка и чаша.\nЛегко справляется с тестом, кремами и взбиванием, и хорошо смотрится на столешнице."},
+ en:{n:"KitchenAid Artisan mixer",s:"Black, full set with plenty of attachments.",
+   d:"KitchenAid Artisan stand mixer in black, full set with attachments — dough hook, whisk, beater and bowl.\nHandles doughs, creams and whipping effortlessly, and looks good on the counter."}},
+
+{id:"ninja", c:"kitchen", p:200, o:547, imgs:[],
+ he:{n:"בלנדר Ninja Nutri Hot & Cold",s:"מתאים גם למרקים חמים.",
+   d:"בלנדר Ninja Nutri Hot & Cold, מתאים גם לשייקים קרים וגם למרקים חמים.\nכולל את הכוסות והמכסים שהגיעו איתו."},
+ ru:{n:"Блендер Ninja Nutri Hot & Cold",s:"Подходит и для горячих супов.",
+   d:"Блендер Ninja Nutri Hot & Cold — и для холодных смузи, и для горячих супов.\nВ комплекте стаканы и крышки, которые шли с ним."},
+ en:{n:"Ninja Nutri Hot & Cold blender",s:"Handles hot soups as well as cold drinks.",
+   d:"Ninja Nutri Hot & Cold blender, for cold smoothies as well as hot soups.\nComes with the cups and lids it shipped with."}},
+
+{id:"toasters", c:"kitchen", p:300, o:872, imgs:[],
+ he:{n:"שלישיית טוסטרים",s:"וופל בלגי Davo, מצנם Davo Retro וטוסטר לחיצה Morphy Richards.",
+   d:"שלושה מכשירים שחורים שהולכים ביחד:\n• טוסטר לחיצה לוופל בלגי Davo: מחיר בחנות - 329 ₪, שימוש אחד בלבד, כחדש\n• מצנם Davo Retro: מחיר בחנות - 219 ₪, שימוש אחד בלבד, כחדש\n• טוסטר לחיצה ענק Morphy Richards: מחיר בחנות - 324 ₪\nאפשר לקחת את השלושה ביחד במחיר הזה."},
+ ru:{n:"Три тостера комплектом",s:"Вафельница Davo, тостер Davo Retro и пресс Morphy Richards.",
+   d:"Три чёрных прибора, продаются вместе:\n• Вафельница для бельгийских вафель Davo: цена в магазине - 329 ₪, использовалась один раз, как новая\n• Тостер Davo Retro: цена в магазине - 219 ₪, использовался один раз, как новый\n• Большой прижимной тостер Morphy Richards: цена в магазине - 324 ₪\nВсе три по этой цене."},
+ en:{n:"Three toasters together",s:"Davo Belgian waffle press, Davo Retro toaster and a Morphy Richards press.",
+   d:"Three black appliances sold as one lot:\n• Davo Belgian waffle press: retail price - ₪329, used once, like new\n• Davo Retro toaster: retail price - ₪219, used once, like new\n• Large Morphy Richards sandwich press: retail price - ₪324\nAll three at this price."}},
+
+/* ---------------- כביסה וניקיון ---------------- */
+{id:"roborock", c:"laundry", p:1700, o:3485, imgs:[],
+ he:{n:"שואב רובוטי Roborock Saros 20",s:"Sonic Complete, תחנה ששוטפת את עצמה. חצי שנה, כחדש.",
+   d:"שואב אבק רובוטי Roborock Saros 20 Sonic Complete, נרכש לפני חצי שנה ובמצב של חדש.\nכולל תחנת עגינה ששוטפת את המגבות בעצמה, וסט אביזרים חילופיים חדש שלא נפתח. שואב ושוטף, ממופה לדירה ונשלט מהאפליקציה."},
+ ru:{n:"Робот-пылесос Roborock Saros 20",s:"Sonic Complete, станция с самоочисткой. Полгода, как новый.",
+   d:"Робот-пылесос Roborock Saros 20 Sonic Complete, куплен полгода назад, состояние нового.\nВ комплекте док-станция, которая сама промывает насадки, и новый нераспечатанный набор сменных аксессуаров. Пылесосит и моет, строит карту квартиры, управляется из приложения."},
+ en:{n:"Roborock Saros 20 robot vacuum",s:"Sonic Complete, self-washing dock. Six months old, like new.",
+   d:"Roborock Saros 20 Sonic Complete robot vacuum, bought six months ago and in as-new condition.\nIncludes the dock that washes its own mops, plus an unopened set of replacement accessories. Vacuums and mops, maps the apartment and runs from the app."}},
+
+{id:"dyson", c:"laundry", p:1800, o:3600, imgs:[],
+ he:{n:"שואב אבק Dyson Gen5 Absolute",s:"דגם SV23 עם כל האביזרים וסטנד. חצי שנה, כחדש.",
+   d:"שואב אבק אלחוטי Dyson Gen5 Absolute, דגם SV23, נרכש לפני חצי שנה ובמצב של חדש.\nכולל את כל האביזרים שהגיעו בערכה וגם סטנד שנרכש בנפרד, כך שלא צריך לקדוח בקיר. סוללה חזקה ומסך עם נתוני שאיבה."},
+ ru:{n:"Пылесос Dyson Gen5 Absolute",s:"Модель SV23 со всеми насадками и стойкой. Полгода, как новый.",
+   d:"Беспроводной пылесос Dyson Gen5 Absolute, модель SV23, куплен полгода назад, состояние нового.\nВсе насадки из комплекта плюс отдельно купленная стойка — сверлить стену не нужно. Мощный аккумулятор и экран со статистикой уборки."},
+ en:{n:"Dyson Gen5 Absolute vacuum",s:"SV23 with every attachment plus a stand. Six months old, like new.",
+   d:"Dyson Gen5 Absolute cordless vacuum, model SV23, bought six months ago and in as-new condition.\nIncludes every attachment from the kit plus a separately bought floor stand, so there's no drilling into the wall. Strong battery and a screen with cleaning data."}},
+
+{id:"washer", c:"laundry", p:1000, o:2300, imgs:[],
+ he:{n:"מכונת כביסה AEG 6000, 9 ק״ג",s:"פתח חזית. שנה, כחדשה.",
+   d:"מכונת כביסה AEG סדרה 6000, פתח חזית, 9 ק״ג. נרכשה לפני שנה ובמצב מצוין.\nשקטה, עם תוכניות קצרות ליומיום. עובדת בדירה וניתן לראות אותה פועלת."},
+ ru:{n:"Стиральная машина AEG 6000, 9 кг",s:"Фронтальная загрузка. Год, как новая.",
+   d:"Стиральная машина AEG серии 6000, фронтальная загрузка, 9 кг. Куплена год назад, состояние отличное.\nТихая, с короткими повседневными программами. Работает в квартире, можно посмотреть в деле."},
+ en:{n:"AEG 6000 washing machine, 9 kg",s:"Front loader. One year old, like new.",
+   d:"AEG 6000 series front-loading washing machine, 9 kg. Bought a year ago, excellent condition.\nQuiet, with short everyday programmes. Still in use in the apartment and can be seen running."}},
+
+{id:"dryer", c:"laundry", p:1000, o:1950, imgs:[],
+ he:{n:"מייבש כביסה AEG 6000, 7 ק״ג",s:"קונדנסור, פתח חזית. חצי שנה, כחדש.",
+   d:"מייבש כביסה AEG סדרה 6000, קונדנסור, פתח חזית, 7 ק״ג. נרכש לפני חצי שנה ובמצב של חדש.\nלא דורש חיבור לארובה או לחלון — מרוקנים מיכל מים. אפשר לקחת יחד עם מכונת הכביסה."},
+ ru:{n:"Сушильная машина AEG 6000, 7 кг",s:"Конденсационная, фронтальная. Полгода, как новая.",
+   d:"Сушильная машина AEG серии 6000, конденсационная, фронтальная загрузка, 7 кг. Куплена полгода назад, состояние новой.\nНе требует вывода воздуха наружу — просто сливается бак с водой. Можно забрать вместе со стиральной машиной."},
+ en:{n:"AEG 6000 tumble dryer, 7 kg",s:"Condenser, front loader. Six months old, like new.",
+   d:"AEG 6000 series condenser tumble dryer, front loading, 7 kg. Bought six months ago and in as-new condition.\nNo venting needed — you just empty the water tank. Can go together with the washing machine."}},
+
+{id:"starkvind", c:"laundry", p:1200, o:2655, imgs:[],
+ he:{n:"3 מטהרי אוויר Starkvind",s:"כולל סטים חילופיים חדשים של פילטרים.",
+   d:"שלושה מטהרי אוויר איקאה Starkvind, כולל סטים חילופיים חדשים של פילטרים לכל אחד.\nשקטים, עם מצב אוטומטי, ומתחברים למערכת הבית החכם של איקאה. אפשר לקחת את השלושה או אחד-שניים."},
+ ru:{n:"3 очистителя воздуха Starkvind",s:"С новыми комплектами сменных фильтров.",
+   d:"Три очистителя воздуха IKEA Starkvind, к каждому — новый комплект сменных фильтров.\nТихие, с автоматическим режимом, подключаются к системе умного дома IKEA. Можно забрать все три или один-два."},
+ en:{n:"3× Starkvind air purifiers",s:"With new replacement filter sets.",
+   d:"Three IKEA Starkvind air purifiers, each with a new set of replacement filters.\nQuiet, with an automatic mode, and they connect to IKEA's smart home system. Take all three or just one or two."}},
+
+/* ---------------- ריהוט ---------------- */
+{id:"kivik", c:"furniture", p:1500, o:4590, imgs:[],
+ he:{n:"ספה Kivik תלת מושבית עם שזלונג",s:"אפור כהה, בד Tresund.",
+   d:"ספת Kivik של איקאה, תלת מושבית עם שזלונג, בצבע אפור כהה (בד Tresund אנתרציט).\nספה גדולה ונוחה במיוחד, מושבים עמוקים לישיבה ולשכיבה. אפשרי פירוק להובלה."},
+ ru:{n:"Диван Kivik, 3 места с кушеткой",s:"Тёмно-серый, ткань Tresund.",
+   d:"Диван IKEA Kivik, трёхместный с кушеткой, тёмно-серый (ткань Tresund, антрацит).\nБольшой и очень удобный, глубокие сиденья — можно и сидеть, и лежать. Разбирается для перевозки."},
+ en:{n:"Kivik 3-seat sofa with chaise",s:"Dark grey, Tresund fabric.",
+   d:"IKEA Kivik three-seat sofa with chaise longue in dark grey (Tresund anthracite).\nBig and genuinely comfortable, with deep seats for sitting or lying down. Comes apart for transport."}},
+
+{id:"keter", c:"furniture", p:1200, o:2400, imgs:[],
+ he:{n:"סט ישיבה קורפו כתר",s:"2 ספות, 2 כורסאות, 2 שולחנות וכריות. אפור כהה.",
+   d:"סט ישיבה ענק של כתר פלסטיק, דגם קורפו, בצבע אפור כהה:\n• ספה 3 מקומות\n• ספה 2 מקומות\n• זוג כורסאות יחיד\n• שולחן קפה ושולחן עם אחסון\n• כריות ישיבה\nמתאים למרפסת, לגינה או לחצר, עמיד לשמש ולגשם. רוב הפריטים נרכשו לפני חצי שנה."},
+ ru:{n:"Комплект мебели Keter Corfu",s:"2 дивана, 2 кресла, 2 столика и подушки. Тёмно-серый.",
+   d:"Большой комплект садовой мебели Keter, модель Corfu, тёмно-серый:\n• Диван на 3 места\n• Диван на 2 места\n• Два кресла\n• Журнальный столик и столик с ящиком для хранения\n• Подушки для сидения\nДля балкона, сада или двора, устойчив к солнцу и дождю. Большинство предметов куплено полгода назад."},
+ en:{n:"Keter Corfu seating set",s:"2 sofas, 2 armchairs, 2 tables and cushions. Dark grey.",
+   d:"Large Keter Corfu outdoor seating set in dark grey:\n• 3-seat sofa\n• 2-seat sofa\n• Two armchairs\n• Coffee table and a table with storage\n• Seat cushions\nBuilt for a balcony, garden or yard, sun and rain resistant. Most pieces bought six months ago."}},
+
+{id:"oskarshamn", c:"furniture", p:700, o:2240, imgs:[],
+ he:{n:"כורסה Oskarshamn עם הדום",s:"אפור כהה. קרע קטן בצד שניתן לתיקון.",
+   d:"כורסת אוזניים Oskarshamn של איקאה עם הדום תואם, בצבע אפור כהה (Gunnared).\nיש קרע קטן בצד הכורסה שניתן לתיקון, ובגלל זה המחיר. חוץ מזה הכורסה במצב טוב מאוד ונוחה מאוד לקריאה."},
+ ru:{n:"Кресло Oskarshamn с пуфом",s:"Тёмно-серое. Небольшой ремонтопригодный разрыв сбоку.",
+   d:"Кресло с подголовником IKEA Oskarshamn с подходящим пуфом, тёмно-серое (Gunnared).\nСбоку есть небольшой разрыв, который можно зашить — отсюда и цена. В остальном кресло в очень хорошем состоянии и очень удобное для чтения."},
+ en:{n:"Oskarshamn wing chair with footstool",s:"Dark grey. Small repairable tear on the side.",
+   d:"IKEA Oskarshamn wing chair with matching footstool, dark grey (Gunnared).\nThere's a small tear on the side of the chair that can be repaired, which is why the price is what it is. Otherwise it's in very good condition and very comfortable to read in."}},
+
+{id:"dining", c:"furniture", p:800, o:2400, approx:true, imgs:[],
+ he:{n:"שולחן אוכל נפתח + 6 כסאות",s:"שולחן לבן, כסאות לבנים עם מושבים אפורים.",
+   d:"שולחן אוכל נפתח של איקאה בצבע לבן, יחד עם 6 כסאות לבנים עם מושבים מרופדים אפורים.\nסגור מתאים ליומיום, ונפתח לאירוח. מחיר החנות מוערך כי נרכשו בזמנים שונים."},
+ ru:{n:"Раздвижной обеденный стол + 6 стульев",s:"Белый стол, белые стулья с серыми сиденьями.",
+   d:"Раздвижной обеденный стол IKEA белого цвета и 6 белых стульев с серыми мягкими сиденьями.\nВ сложенном виде — на каждый день, раскладывается для гостей. Цена в магазине указана примерно, так как покупалось в разное время."},
+ en:{n:"Extendable dining table + 6 chairs",s:"White table, white chairs with grey seats.",
+   d:"IKEA extendable dining table in white, with 6 white chairs with padded grey seats.\nClosed for everyday use, extends when you have guests. The retail price is an estimate, as the pieces were bought at different times."}},
+
+{id:"pax8", c:"furniture", p:3500, o:7907, imgs:[],
+ he:{n:"ארון PAX 350×236, 8 דלתות",s:"ענק: מדפים, מגירות טריקה שקטה, מגשים, תאורה ודלתות מראה.",
+   d:"ארון איקאה PAX ענק בצבע לבן, 350×236 ס״מ, 8 דלתות. פירוט המחירים בחנות:\n• 2 מסגרות 100×236: מחיר בחנות - 1,090 ₪\n• מסגרת 75×236: מחיר בחנות - 495 ₪\n• מסגרת 75×201: מחיר בחנות - 445 ₪\n• 7 מדפים 75 ס״מ: מחיר בחנות - 420 ₪\n• 7 מדפים 100 ס״מ: מחיר בחנות - 525 ₪\n• 4 מגירות טריקה שקטה 100 ס״מ: מחיר בחנות - 660 ₪\n• מגירת טריקה שקטה 75 ס״מ: מחיר בחנות - 140 ₪\n• מגש נשלף 75 ס״מ: מחיר בחנות - 150 ₪\n• 2 מגשים נשלפים 100 ס״מ: מחיר בחנות - 350 ₪\n• מתלים לתליית בגדים 100 ו-75 ס״מ\n• 4 פסי תאורה: מחיר בחנות - 276 ₪\n• 5 דלתות פארדל 50×229: מחיר בחנות - 1,975 ₪\n• דלת מראה 25×229: מחיר בחנות - 445 ₪\n• דלת מראה 50×195: מחיר בחנות - 475 ₪\n• דלת פארדל 25×195: מחיר בחנות - 305 ₪\n• 8 ידיות: מחיר בחנות - 156 ₪\nהפירוק וההובלה על הקונה."},
+ ru:{n:"Шкаф PAX 350×236, 8 дверей",s:"Огромный: полки, ящики с доводчиком, лотки, подсветка и зеркальные двери.",
+   d:"Огромный шкаф IKEA PAX, белый, 350×236 см, 8 дверей. Цены в магазине по частям:\n• 2 каркаса 100×236: цена в магазине - 1 090 ₪\n• Каркас 75×236: цена в магазине - 495 ₪\n• Каркас 75×201: цена в магазине - 445 ₪\n• 7 полок 75 см: цена в магазине - 420 ₪\n• 7 полок 100 см: цена в магазине - 525 ₪\n• 4 ящика с доводчиком 100 см: цена в магазине - 660 ₪\n• Ящик с доводчиком 75 см: цена в магазине - 140 ₪\n• Выдвижной лоток 75 см: цена в магазине - 150 ₪\n• 2 выдвижных лотка 100 см: цена в магазине - 350 ₪\n• Штанги для одежды 100 и 75 см\n• 4 световые планки: цена в магазине - 276 ₪\n• 5 дверей Fardal 50×229: цена в магазине - 1 975 ₪\n• Зеркальная дверь 25×229: цена в магазине - 445 ₪\n• Зеркальная дверь 50×195: цена в магазине - 475 ₪\n• Дверь Fardal 25×195: цена в магазине - 305 ₪\n• 8 ручек: цена в магазине - 156 ₪\nРазборка и перевозка — на покупателе."},
+ en:{n:"PAX wardrobe 350×236, 8 doors",s:"Huge: shelves, soft-close drawers, trays, lighting and mirror doors.",
+   d:"Huge IKEA PAX wardrobe in white, 350×236 cm, 8 doors. Retail prices by part:\n• 2 frames 100×236: retail price - ₪1,090\n• Frame 75×236: retail price - ₪495\n• Frame 75×201: retail price - ₪445\n• 7 shelves 75 cm: retail price - ₪420\n• 7 shelves 100 cm: retail price - ₪525\n• 4 soft-close drawers 100 cm: retail price - ₪660\n• Soft-close drawer 75 cm: retail price - ₪140\n• Pull-out tray 75 cm: retail price - ₪150\n• 2 pull-out trays 100 cm: retail price - ₪350\n• Clothes rails 100 and 75 cm\n• 4 light strips: retail price - ₪276\n• 5 Fardal doors 50×229: retail price - ₪1,975\n• Mirror door 25×229: retail price - ₪445\n• Mirror door 50×195: retail price - ₪475\n• Fardal door 25×195: retail price - ₪305\n• 8 handles: retail price - ₪156\nDisassembly and transport are on the buyer."}},
+
+{id:"pax3", c:"furniture", p:2200, o:4630, imgs:[],
+ he:{n:"ארון PAX 150×236, 3 דלתות",s:"לבן, 18 מדפים, 8 מגירות ו-2 מגירות נעליים.",
+   d:"ארון איקאה PAX בצבע לבן, 150×236 ס״מ, 3 דלתות. פירוט המחירים בחנות:\n• מסגרות: מחיר בחנות - 1,335 ₪\n• 18 מדפים: מחיר בחנות - 900 ₪\n• 8 מגירות: מחיר בחנות - 920 ₪\n• 2 מדפי נעליים: מחיר בחנות - 290 ₪\n• דלתות: מחיר בחנות - 1,185 ₪\nהפירוק וההובלה על הקונה."},
+ ru:{n:"Шкаф PAX 150×236, 3 двери",s:"Белый, 18 полок, 8 ящиков и 2 полки для обуви.",
+   d:"Шкаф IKEA PAX, белый, 150×236 см, 3 двери. Цены в магазине по частям:\n• Каркасы: цена в магазине - 1 335 ₪\n• 18 полок: цена в магазине - 900 ₪\n• 8 ящиков: цена в магазине - 920 ₪\n• 2 обувные полки: цена в магазине - 290 ₪\n• Двери: цена в магазине - 1 185 ₪\nРазборка и перевозка — на покупателе."},
+ en:{n:"PAX wardrobe 150×236, 3 doors",s:"White, 18 shelves, 8 drawers and 2 shoe shelves.",
+   d:"IKEA PAX wardrobe in white, 150×236 cm, 3 doors. Retail prices by part:\n• Frames: retail price - ₪1,335\n• 18 shelves: retail price - ₪900\n• 8 drawers: retail price - ₪920\n• 2 shoe shelves: retail price - ₪290\n• Doors: retail price - ₪1,185\nDisassembly and transport are on the buyer."}},
+
+{id:"brimnes", c:"furniture", p:1000, o:2220, imgs:[],
+ he:{n:"מיטה זוגית Brimnes 160×200",s:"4 תאי אחסון וראש מיטה.",
+   d:"מיטה זוגית איקאה Brimnes במידה 160×200 ס״מ, לבנה.\n4 תאי אחסון גדולים מתחת למיטה וראש מיטה עם מדף. בסיס מזרן משתלבים (Luroy). המזרן לא כלול."},
+ ru:{n:"Двуспальная кровать Brimnes 160×200",s:"4 ящика для хранения и изголовье.",
+   d:"Двуспальная кровать IKEA Brimnes 160×200 см, белая.\nЧетыре больших ящика для хранения под кроватью и изголовье с полкой. Реечное дно Luroy. Матрас не входит."},
+ en:{n:"Brimnes double bed 160×200",s:"Four storage boxes and a headboard.",
+   d:"IKEA Brimnes double bed, 160×200 cm, white.\nFour large storage boxes under the bed and a headboard with a shelf. Luroy slatted base. Mattress not included."}},
+
+{id:"slakt1", c:"furniture", p:1500, o:2995, imgs:[],
+ he:{n:"מיטת ילדים Slakt עם 4 מגירות",s:"90×200 כולל מזרן Vesteroy קפיצי כיס.",
+   d:"מיטת ילדים איקאה Slakt במידה 90×200 ס״מ עם 4 מגירות אחסון (מחיר בחנות - 1,895 ₪), כולל מזרן Vesteroy קפיצי כיס (מחיר בחנות - 1,100 ₪).\nנרכש לפני כשנה ובמצב של חדש. מיטה יציבה עם הרבה מקום לאחסון מתחת."},
+ ru:{n:"Детская кровать Slakt с 4 ящиками",s:"90×200, с матрасом Vesteroy с карманными пружинами.",
+   d:"Детская кровать IKEA Slakt 90×200 см с 4 ящиками для хранения (цена в магазине - 1 895 ₪) и матрасом Vesteroy с карманными пружинами (цена в магазине - 1 100 ₪).\nКуплено около года назад, состояние нового. Устойчивая кровать с большим объёмом хранения внизу."},
+ en:{n:"Slakt children's bed with 4 drawers",s:"90×200 including a Vesteroy pocket-sprung mattress.",
+   d:"IKEA Slakt children's bed, 90×200 cm, with 4 storage drawers (retail price - ₪1,895), including a Vesteroy pocket-sprung mattress (retail price - ₪1,100).\nBought about a year ago and in as-new condition. Sturdy bed with plenty of storage underneath."}},
+
+{id:"slakt2", c:"furniture", p:1500, o:3035, imgs:[],
+ he:{n:"מיטת ילדים Slakt עם מיטת חבר",s:"90×200, מיטה נשלפת, 2 מגירות ו-2 מזרנים.",
+   d:"מיטת ילדים איקאה Slakt במידה 90×200 ס״מ עם מיטת חבר נשלפת ו-2 מגירות אחסון (מחיר בחנות - 1,440 ₪).\nכולל מזרן Vesteroy קפיצי כיס (1,100 ₪) ומזרן Afjall למיטת החבר (495 ₪). פתרון מצוין ללינות של חברים."},
+ ru:{n:"Детская кровать Slakt с выдвижной кроватью",s:"90×200, выдвижное спальное место, 2 ящика и 2 матраса.",
+   d:"Детская кровать IKEA Slakt 90×200 см с выдвижной гостевой кроватью и 2 ящиками для хранения (цена в магазине - 1 440 ₪).\nВключает матрас Vesteroy с карманными пружинами (1 100 ₪) и матрас Afjall для выдвижной кровати (495 ₪). Отличное решение, когда остаются друзья."},
+ en:{n:"Slakt children's bed with underbed",s:"90×200, pull-out bed, 2 drawers and 2 mattresses.",
+   d:"IKEA Slakt children's bed, 90×200 cm, with a pull-out guest bed and 2 storage drawers (retail price - ₪1,440).\nIncludes a Vesteroy pocket-sprung mattress (₪1,100) and an Afjall mattress for the underbed (₪495). A great setup for sleepovers."}},
+
+{id:"alex", c:"furniture", p:1200, o:2520, imgs:[],
+ he:{n:"שולחן כתיבה Alex + מגירות + כסא",s:"שולחן 132×58, יחידת מגירות על גלגלים וכסא Hattefjäll.",
+   d:"עמדת עבודה שלמה, הכול חדש לחלוטין:\n• שולחן כתיבה איקאה Alex לבן, 132×58 ס״מ, 2 מגירות ומעבר לכבלים: מחיר בחנות - 895 ₪\n• יחידת מגירות Alex על גלגלים, לבן: מחיר בחנות - 475 ₪\n• כסא מחשב Hattefjäll בלבן ואפור בהיר: מחיר בחנות - 1,150 ₪\nאפשר לקחת יחד עם המסכים שברשימה."},
+ ru:{n:"Стол Alex + тумба + кресло",s:"Стол 132×58, тумба на колёсах и кресло Hattefjäll.",
+   d:"Готовое рабочее место, всё абсолютно новое:\n• Письменный стол IKEA Alex, белый, 132×58 см, 2 ящика и место для кабелей: цена в магазине - 895 ₪\n• Тумба Alex на колёсах, белая: цена в магазине - 475 ₪\n• Рабочее кресло Hattefjäll, белое со светло-серым: цена в магазине - 1 150 ₪\nМожно забрать вместе с мониторами из списка."},
+ en:{n:"Alex desk + drawer unit + chair",s:"132×58 desk, drawer unit on castors and a Hattefjäll chair.",
+   d:"A complete workstation, all brand new:\n• IKEA Alex desk in white, 132×58 cm, 2 drawers and cable management: retail price - ₪895\n• Alex drawer unit on castors, white: retail price - ₪475\n• Hattefjäll office chair in white and light grey: retail price - ₪1,150\nCan go together with the monitors listed here."}},
+
+{id:"kallax", c:"furniture", p:1000, o:1958, imgs:[],
+ he:{n:"2 יחידות Kallax",s:"כוורת 4×4 וכוורת 2×4 עם בסיסים, מגירות ותאי אחסון.",
+   d:"שתי יחידות מדפים כוורת של איקאה, חצי שנה ובמצב של חדש:\n• Kallax 4×4 עם מסגרת בסיס ורגליים\n• Kallax 2×4 לבן עם מסגרת בסיס ורגליים\n• 2 תאי אחסון\n• 4 מגירות\n• תא אחסון עם 4 מדפים לסידור ניירת\nאפשר לקחת את שתיהן או אחת."},
+ ru:{n:"2 стеллажа Kallax",s:"4×4 и 2×4 с основаниями, ящиками и вставками.",
+   d:"Два стеллажа IKEA Kallax, полгода, состояние нового:\n• Kallax 4×4 с основанием на ножках\n• Kallax 2×4 белый с основанием на ножках\n• 2 вставки-ящика\n• 4 выдвижных ящика\n• Вставка с 4 полками для бумаг\nМожно забрать оба или один."},
+ en:{n:"2× Kallax shelving units",s:"4×4 and 2×4 with bases, drawers and inserts.",
+   d:"Two IKEA Kallax shelving units, six months old and in as-new condition:\n• Kallax 4×4 with base frame and legs\n• Kallax 2×4 in white with base frame and legs\n• 2 storage inserts\n• 4 drawers\n• One insert with 4 shelves for paperwork\nTake both or just one."}},
+
+{id:"vihals", c:"furniture", p:400, o:845, imgs:[],
+ he:{n:"יחידת אחסון Vihals, 10 מדפים",s:"לבן, 95×37×200 ס״מ.",
+   d:"יחידת מדפים איקאה Vihals בצבע לבן, במידות 95×37×200 ס״מ, עם 10 מדפים.\nגבוהה וצרה יחסית, נכנסת יפה בפינה או ליד שולחן עבודה."},
+ ru:{n:"Стеллаж Vihals, 10 полок",s:"Белый, 95×37×200 см.",
+   d:"Стеллаж IKEA Vihals, белый, 95×37×200 см, 10 полок.\nВысокий и достаточно узкий — хорошо встаёт в угол или рядом с рабочим столом."},
+ en:{n:"Vihals shelving unit, 10 shelves",s:"White, 95×37×200 cm.",
+   d:"IKEA Vihals shelving unit in white, 95×37×200 cm, with 10 shelves.\nTall and fairly narrow, fits nicely in a corner or beside a desk."}},
+
+{id:"bergig", c:"furniture", p:300, o:595, imgs:[],
+ he:{n:"מעמד לספרים Bergig",s:"עם אחסון, לבן. מתאים לחדר ילדים.",
+   d:"מעמד לספרים איקאה Bergig בצבע לבן, עם תא אחסון מתחת.\nמציג את הספרים עם הכריכה קדימה, מה שעוזר לילדים לבחור בעצמם."},
+ ru:{n:"Стеллаж для книг Bergig",s:"С ящиком для хранения, белый. Для детской.",
+   d:"Витрина для книг IKEA Bergig, белая, с отделением для хранения внизу.\nКниги стоят обложкой вперёд — детям удобно выбирать самим."},
+ en:{n:"Bergig book display",s:"With storage, white. Good for a kid's room.",
+   d:"IKEA Bergig book display in white, with a storage compartment underneath.\nBooks face cover-out, which makes it easy for children to pick their own."}},
+
+{id:"bissa", c:"furniture", p:300, o:590, imgs:[],
+ he:{n:"2 ארונות נעליים Bissa",s:"3 תאים כל אחד, לבן. חצי שנה, כחדשים.",
+   d:"שני ארונות נעליים איקאה Bissa, 3 תאים כל אחד, בצבע לבן.\nרדודים וחוסכים מקום במסדרון. נרכשו לפני חצי שנה ובמצב של חדשים."},
+ ru:{n:"2 обувных шкафа Bissa",s:"По 3 отделения, белые. Полгода, как новые.",
+   d:"Два обувных шкафа IKEA Bissa, по 3 отделения каждый, белые.\nНеглубокие, экономят место в прихожей. Куплены полгода назад, состояние новых."},
+ en:{n:"2× Bissa shoe cabinets",s:"Three compartments each, white. Six months old, like new.",
+   d:"Two IKEA Bissa shoe cabinets, three compartments each, in white.\nShallow and space-saving in a hallway. Bought six months ago and in as-new condition."}},
+
+{id:"nysjon", c:"furniture", p:250, o:450, imgs:[],
+ he:{n:"ארון אמבטיה גבוה Nysjön",s:"30×40×190 ס״מ, 4 מדפים. חדש לחלוטין.",
+   d:"ארון גבוה לחדר אמבטיה, איקאה Nysjön, במידות 30×40×190 ס״מ, בצבע לבן.\nעם רגליים ו-4 מדפים. חדש לחלוטין."},
+ ru:{n:"Высокий шкаф для ванной Nysjön",s:"30×40×190 см, 4 полки. Абсолютно новый.",
+   d:"Высокий шкаф для ванной IKEA Nysjön, 30×40×190 см, белый.\nНа ножках, с 4 полками. Абсолютно новый."},
+ en:{n:"Nysjön tall bathroom cabinet",s:"30×40×190 cm, 4 shelves. Brand new.",
+   d:"IKEA Nysjön tall bathroom cabinet, 30×40×190 cm, white.\nWith legs and 4 shelves. Brand new."}},
+
+/* ---------------- צמחים ---------------- */
+{id:"palms", c:"plants", p:1200, o:2500, approx:true, imgs:[],
+ he:{n:"2 עצי דקל גדולים מאוד",s:"גדלו 5 שנים, כולל אדניות איכותיות.",
+   d:"שני עצי דקל גדולים מאוד שגדלו אצלי 5 שנים, יחד עם אדניות איכותיות ועמידות.\nמחיר בחנות של האדניות לבדן - כ-900 ₪, ומחיר בחנות של עצים בגודל כזה - כ-1,400–1,800 ₪. נמכרים כזוג."},
+ ru:{n:"2 больших пальмы",s:"Растут 5 лет, с качественными кашпо.",
+   d:"Две очень большие пальмы, которые росли у меня 5 лет, вместе с прочными качественными кашпо.\nЦена кашпо в магазине - около 900 ₪, а цена таких деревьев в магазине - примерно 1 400–1 800 ₪. Продаются парой."},
+ en:{n:"2 very large palm trees",s:"Grown for 5 years, with quality planters.",
+   d:"Two very large palms I've grown for five years, together with sturdy quality planters.\nRetail price of the planters alone - about ₪900, and retail price for trees this size - roughly ₪1,400–1,800. Sold as a pair."}},
+
+{id:"ficus", c:"plants", p:500, o:1000, approx:true, imgs:[],
+ he:{n:"עץ פיקוס בנימינה גדול",s:"גדל 5 שנים, באדנית פלסטיק איכותית.",
+   d:"עץ פיקוס בנימינה גדול ויפה שגדל אצלי 5 שנים, באדנית פלסטיק איכותית ועמידה.\nמחיר בחנות של האדנית לבדה - כ-400 ₪, ומחיר בחנות של עץ בגודל כזה - כ-500–700 ₪."},
+ ru:{n:"Большой фикус Бенджамина",s:"Растёт 5 лет, в качественном пластиковом кашпо.",
+   d:"Большой красивый фикус Бенджамина, растёт у меня 5 лет, в прочном качественном пластиковом кашпо.\nЦена кашпо в магазине - около 400 ₪, а цена такого дерева в магазине - примерно 500–700 ₪."},
+ en:{n:"Large weeping fig (ficus benjamina)",s:"Grown for 5 years, in a quality plastic planter.",
+   d:"A big, good-looking weeping fig I've grown for five years, in a sturdy quality plastic planter.\nRetail price of the planter alone - about ₪400, and retail price for a tree this size - roughly ₪500–700."}},
+
+{id:"philodendron", c:"plants", p:300, o:null, imgs:[],
+ he:{n:"פילודנדרון מטפס ענק",s:"גדל 5 שנים, באדנית לבן קרמי.",
+   d:"עציץ פילודנדרון מטפס ענק ויפה, גדל אצלי 5 שנים, באדנית איכותית ועמידה בצבע לבן קרמי.\nצמח מרשים שממלא פינה שלמה."},
+ ru:{n:"Огромный вьющийся филодендрон",s:"Растёт 5 лет, в кашпо кремово-белого цвета.",
+   d:"Огромный красивый вьющийся филодендрон, растёт у меня 5 лет, в прочном качественном кашпо кремово-белого цвета.\nЭффектное растение, которое заполняет собой целый угол."},
+ en:{n:"Huge climbing philodendron",s:"Grown for 5 years, in a cream-white planter.",
+   d:"A huge, handsome climbing philodendron I've grown for five years, in a sturdy quality planter in cream white.\nAn impressive plant that fills a whole corner."}}
+];
+
+/* ======================================================================
+   סימון "נמכר": נמצא בקובץ sold.json שליד הקובץ הזה.
+   כדי לסמן פריט כנמכר, הוסיפו את המזהה שלו לרשימה, למשל:
+   { "ids": ["sonos", "fridge"] }
+   תמונות: בקובץ images.json, למשל
+   { "sonos": ["img/sonos-1.jpg", "img/sonos-2.jpg"] }
+   ====================================================================== */
+const SOLD_BASE = [];
+
+let lang = "he";
+let active = "all";
+let sold = new Set(SOLD_BASE);
+let adminMode = false;
+
+const $ = id => document.getElementById(id);
+const grid = $("grid"), emptyMsg = $("empty"), countEl = $("count"),
+      chipsEl = $("chips"), q = $("q"), sheet = $("sheet"), lightbox = $("lightbox");
+
+/* ---------- static text ---------- */
+function paintChrome(){
+  const t = UI[lang];
+  document.documentElement.lang = lang;
+  document.documentElement.dir = t.dir;
+  document.body.dir = t.dir;
+  $("t-eyebrow").textContent = t.eyebrow;
+  const [head, ...rest] = t.title.split(" - ");
+  $("t-title").innerHTML = rest.length
+    ? `<span class="hl">${head}</span> ${rest.join(" - ")}`
+    : head;
+  $("t-lede").textContent = t.lede;
+  document.title = t.title;
+
+  $("t-terms").innerHTML = t.terms.map(([b,s])=>`<div class="term"><b>${b}</b><span>${s}</span></div>`).join("");
+
+  q.placeholder = t.search;
+  $("t-ctitle").textContent = t.ctitle;
+  $("t-ctext").textContent = t.ctext;
+  $("t-who").textContent = t.who;
+  $("t-fine").textContent = t.fine;
+  $("t-admin").textContent = t.admin;
+  $("adminbar").hidden = !adminMode;
+
+  const opts = [["all", t.all, ITEMS.length]]
+    .concat(CATS.map(c => [c, t.cats[c], ITEMS.filter(i=>i.c===c).length]));
+  chipsEl.innerHTML = opts.map(([k,label,n]) =>
+    `<button class="chip" type="button" data-cat="${k}" aria-pressed="${k===active}">${label}<span class="c">${n}</span></button>`).join("");
+  $("catsel").innerHTML = opts.map(([k,label,n]) =>
+    `<option value="${k}"${k===active?" selected":""}>${label} (${n})</option>`).join("");
+
+  document.querySelectorAll("#langs button").forEach(b =>
+    b.setAttribute("aria-pressed", String(b.dataset.lang === lang)));
+}
+
+/* ---------- cards ---------- */
+function card(i){
+  const t = UI[lang], L = i[lang];
+  const off = i.o ? Math.round((1 - i.p/i.o)*100) : null;
+  const isSold = sold.has(i.id);
+  const shot = i.imgs.length
+    ? `<button class="shot" type="button" data-lb="${i.id}">
+         <img src="${i.imgs[0]}" alt="${L.n}" loading="lazy">
+         ${i.imgs.length>1?`<span class="pcount">${t.photos(i.imgs.length)}</span>`:""}
+       </button>`
+    : `<div class="shot empty"><span>${t.noimg}</span></div>`;
+  return `<article class="item${isSold?" is-sold":""}">
+    ${isSold?`<span class="soldtag">${t.sold}</span>`:""}
+    ${shot}
+    <div class="pricebar">
+      <span class="now">${t.curr(i.p)}</span>
+      ${i.o?`<span class="was">${i.approx?t.approx:""}${t.curr(i.o)}</span>`:""}
+      ${off!==null?`<span class="off">${off}% ${t.off}</span>`:""}
+    </div>
+    <div class="body">
+      <span class="cat">${t.cats[i.c]}</span>
+      <h3>${L.n}</h3>
+      <p>${L.s}</p>
+      <button class="more" type="button" data-sheet="${i.id}">${t.more}</button>
+      ${adminMode?`<button class="markbtn" type="button" data-mark="${i.id}">${isSold?t.markAvail:t.markSold}</button>`:""}
+    </div>
+  </article>`;
+}
+function render(){
+  const t = UI[lang], term = q.value.trim().toLowerCase();
+  const list = ITEMS.filter(i =>
+    (active === "all" || i.c === active) &&
+    (!term || (i[lang].n + " " + i[lang].s + " " + i[lang].d).toLowerCase().includes(term))
+  );
+  grid.innerHTML = list.map(card).join("");
+  emptyMsg.hidden = list.length > 0;
+  emptyMsg.textContent = lang === "he" ? "לא נמצא פריט מתאים." : lang === "ru" ? "Ничего не найдено." : "No matching item.";
+  countEl.innerHTML = t.shown(list.length, ITEMS.length);
+}
+
+/* ---------- modal ---------- */
+function openSheet(id){
+  const i = ITEMS.find(x=>x.id===id), t = UI[lang], L = i[lang];
+  const off = i.o ? Math.round((1 - i.p/i.o)*100) : null;
+  $("sheetbody").innerHTML = `
+    <span class="cat">${t.cats[i.c]}</span>
+    <h2>${L.n}${sold.has(i.id)?` — ${t.sold}`:""}</h2>
+    <p class="full">${L.d}</p>
+    ${i.imgs.length?`<div class="thumbs">${i.imgs.map((src,idx)=>
+      `<button type="button" data-lb="${i.id}" data-idx="${idx}"><img src="${src}" alt=""></button>`).join("")}</div>`:""}
+    <div class="pricebar">
+      <span class="now">${t.curr(i.p)}</span>
+      ${i.o?`<span class="was">${i.approx?t.approx:""}${t.curr(i.o)}</span>`:""}
+      ${off!==null?`<span class="off">${off}% ${t.off}</span>`:""}
+    </div>`;
+  sheet.showModal();
+}
+
+/* ---------- lightbox ---------- */
+let lbImgs = [], lbIdx = 0;
+function openLb(id, idx){
+  const i = ITEMS.find(x=>x.id===id);
+  if(!i || !i.imgs.length) return;
+  lbImgs = i.imgs; lbIdx = idx || 0;
+  paintLb(); lightbox.showModal();
+}
+function paintLb(){
+  $("lbimg").src = lbImgs[lbIdx];
+  $("lbcount").textContent = `${lbIdx+1} / ${lbImgs.length}`;
+  const one = lbImgs.length < 2;
+  $("lbprev").hidden = one; $("lbnext").hidden = one; $("lbcount").hidden = one;
+}
+const step = d => { lbIdx = (lbIdx + d + lbImgs.length) % lbImgs.length; paintLb(); };
+
+/* ---------- events ---------- */
+document.addEventListener("click", e => {
+  const lb = e.target.closest("[data-lb]");
+  if(lb){ openLb(lb.dataset.lb, Number(lb.dataset.idx || 0)); return; }
+  const more = e.target.closest("[data-sheet]");
+  if(more){ openSheet(more.dataset.sheet); return; }
+  const mark = e.target.closest("[data-mark]");
+  if(mark){ toggleSold(mark.dataset.mark); return; }
+  const cardEl = e.target.closest(".item");
+  if(cardEl && !e.target.closest(".shot")){
+    const art = cardEl.querySelector("[data-sheet]");
+    if(art){ openSheet(art.dataset.sheet); return; }
+  }
+  const chip = e.target.closest(".chip");
+  if(chip){ setCat(chip.dataset.cat); return; }
+  const lng = e.target.closest("#langs button");
+  if(lng){ lang = lng.dataset.lang; paintChrome(); render(); }
+});
+function setCat(v){
+  active = v;
+  chipsEl.querySelectorAll(".chip").forEach(c=>c.setAttribute("aria-pressed", String(c.dataset.cat===active)));
+  $("catsel").value = active;
+  render();
+}
+$("catsel").addEventListener("change", e => setCat(e.target.value));
+q.addEventListener("input", render);
+$("sheetclose").addEventListener("click", ()=>sheet.close());
+$("lbclose").addEventListener("click", ()=>lightbox.close());
+$("lbprev").addEventListener("click", ()=>step(-1));
+$("lbnext").addEventListener("click", ()=>step(1));
+lightbox.addEventListener("click", e => { if(e.target === lightbox) lightbox.close(); });
+document.addEventListener("keydown", e => {
+  if(!lightbox.open) return;
+  if(e.key === "ArrowRight") step(1);
+  if(e.key === "ArrowLeft") step(-1);
+});
+
+/* ---------- sold state (saved for everyone) ---------- */
+function applySold(ids){
+  sold = new Set(ids && ids.length ? ids : SOLD_BASE);
+  render();
+  if(sheet.open) sheet.close();
+}
+function toggleSold(id){
+  sold.has(id) ? sold.delete(id) : sold.add(id);
+  render();
+}
+
+render();
+paintChrome();
+
+fetch("sold.json", {cache:"no-store"})
+  .then(r => r.ok ? r.json() : null)
+  .then(d => { if(d && Array.isArray(d.ids)) applySold(d.ids); })
+  .catch(()=>{});
+
+fetch("images.json", {cache:"no-store"})
+  .then(r => r.ok ? r.json() : null)
+  .then(map => {
+    if(!map) return;
+    ITEMS.forEach(i => { if(Array.isArray(map[i.id]) && map[i.id].length) i.imgs = map[i.id]; });
+    render();
+  })
+  .catch(()=>{});
+</script>
+</body>
+</html>
