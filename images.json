@@ -43,9 +43,16 @@
   "roborock": [
     "img/roborock-1.webp"
   ],
-  "dyson": [],
-  "washer": [],
-  "dryer": [],
+  "dyson": [
+    "img/dyson-1.webp",
+    "img/dyson-2.webp"
+  ],
+  "washer": [
+    "img/washer-1.webp"
+  ],
+  "dryer": [
+    "img/dryer-1.webp"
+  ],
   "starkvind": [
     "img/starkvind-1.webp"
   ],
