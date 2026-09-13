@@ -11,7 +11,13 @@
     "img/ps5-1.webp"
   ],
   "dell": [],
-  "lighting": [],
+  "lighting": [
+    "img/lighting-2.webp",
+    "img/lighting-1.webp",
+    "img/lighting-5.webp",
+    "img/lighting-4.webp",
+    "img/lighting-3.webp"
+  ],
   "nuki": [
     "img/nuki-1.webp",
     "img/nuki-2.webp"
