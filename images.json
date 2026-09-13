@@ -40,7 +40,9 @@
   "dyson": [],
   "washer": [],
   "dryer": [],
-  "starkvind": [],
+  "starkvind": [
+    "img/starkvind-1.webp"
+  ],
   "kivik": [],
   "keter": [],
   "oskarshamn": [],
