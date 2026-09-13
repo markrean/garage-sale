@@ -24,6 +24,7 @@
     --font:"Heebo", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
   }
   *{box-sizing:border-box}
+  [hidden]{display:none!important}
   body{background:var(--paper);color:var(--ink);font-family:var(--font);line-height:1.5;padding-inline:0;padding-block:0 60px;-webkit-font-smoothing:antialiased}
   .wrap{max-width:1180px;margin-inline:auto;padding-inline:16px}
   button{font-family:inherit}
@@ -37,9 +38,10 @@
   .hero{
     background:var(--blue);color:var(--on-blue);border-radius:0;text-align:center;
     padding:clamp(30px,6vw,64px) 16px;margin-inline:calc(50% - 50vw);margin-top:4px;
+    display:flex;flex-direction:column;align-items:center;
   }
-  .hero > *{max-width:1148px;margin-inline:auto}
-  .hero .eyebrow{font-size:.84rem;letter-spacing:0;text-transform:uppercase;color:rgba(255,255,255,.82);font-weight:700;margin:0 0 18px}
+  .hero > *{max-width:1148px;width:100%}
+  .hero .eyebrow{font-size:.84rem;letter-spacing:0;text-transform:uppercase;color:#FFFFFF;font-weight:700;margin:0 0 18px}
   h1{font-weight:800;font-size:clamp(2.7rem,8vw,5.2rem);line-height:.95;margin:0;letter-spacing:0;text-wrap:balance;color:#fff}
   h1 .hl{color:#fff;background:var(--ink);padding:0 .12em;display:inline-block}
   .hero .lede{margin:24px auto 0;max-width:56ch;font-size:1.1rem;color:rgba(255,255,255,.88);font-weight:400}
@@ -75,8 +77,6 @@
     .cta a:last-child{border-block-end:0}
   }
 
-  .adminbar{margin-top:10px;padding:9px 14px;border:2px dashed var(--blue);border-radius:0;background:var(--blue-pale);color:var(--ink);font-size:.87rem;display:flex;gap:9px;flex-wrap:wrap;align-items:center}
-  .adminbar b{font-weight:800}
 
   .grid{display:grid;gap:20px;margin-top:24px;grid-template-columns:repeat(auto-fill,minmax(300px,1fr))}
   .item{background:var(--paper);border:1px solid var(--line);border-radius:0;cursor:pointer;display:flex;flex-direction:column;overflow:hidden;position:relative}
@@ -156,10 +156,6 @@
       <div class="search"><input id="q" type="search" autocomplete="off"></div>
       <span class="count" id="count"></span>
     </div>
-    <div class="adminbar" id="adminbar" hidden>
-      <b id="t-admin"></b>
-      <span class="status" id="adminstatus"></span>
-    </div>
   </div>
 
   <div class="grid" id="grid"></div>
@@ -230,7 +226,7 @@ const UI = {
     eyebrow:"Распродажа обстановки · Неве Шарет, Тель-Авив",
     title:"Гараж-сейл - продаю всё из квартиры",
     lede:"Я съезжаю с квартиры, и всё, что в ней, ищет новый дом. Большинство вещей куплено за последние полгода–год и выглядит как новое. Всё ещё собрано и работает в квартире — можно посмотреть всё за один визит. Берёте несколько вещей — договоримся о цене.",
-    terms:[["Самовывоз","Перевозка и разборка — на покупателе"],["Один визит","Всё собрано и работает, можно проверить на месте"],["Скидка за набор","Берёте несколько вещей — сделаю цену"]],
+    terms:[["Самовывоз","Перевозка и разборка — на покупателе"],["Приходите проверить","Всё собрано и работает, можно проверить на месте"],["Скидка за набор","Если берёте несколько вещей — сделаю цену"]],
     all:"Всё",
     cats:{elec:"Электроника",smart:"Умный дом",kitchen:"Кухня",laundry:"Стирка и уборка",furniture:"Мебель",plants:"Растения"},
     search:"Поиск: холодильник, PAX, Sonos…",
@@ -646,8 +642,6 @@ function paintChrome(){
   $("t-ctext").textContent = t.ctext;
   $("t-who").textContent = t.who;
   $("t-fine").textContent = t.fine;
-  $("t-admin").textContent = t.admin;
-  $("adminbar").hidden = !adminMode;
 
   const opts = [["all", t.all, ITEMS.length]]
     .concat(CATS.map(c => [c, t.cats[c], ITEMS.filter(i=>i.c===c).length]));
