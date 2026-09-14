@@ -48,9 +48,15 @@
     "img/microwave-1.webp",
     "img/microwave-2.webp"
   ],
-  "kitchenaid": [],
-  "ninja": [],
-  "toasters": [],
+  "kitchenaid": [
+    "img/kitchenaid-1.webp"
+  ],
+  "ninja": [
+    "img/ninja-1.webp"
+  ],
+  "toasters": [
+    "img/toasters-1.webp"
+  ],
   "roborock": [
     "img/roborock-1.webp"
   ],
@@ -114,7 +120,9 @@
   "ficus": [
     "img/ficus-1.webp"
   ],
-  "philodendron": [],
+  "philodendron": [
+    "img/philodendron-1.webp"
+  ],
   "basket": [
     "img/basket-1.webp",
     "img/basket-2.webp",
