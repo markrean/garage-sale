@@ -96,7 +96,11 @@
   "img/oskarshamn-1.webp",
   "img/oskarshamn-2.webp"
  ],
- "dining": [],
+ "dining": [
+  "img/dining-3.webp",
+  "img/dining-1.webp",
+  "img/dining-2.webp"
+ ],
  "pax8": [
   "img/pax8-1.webp"
  ],
