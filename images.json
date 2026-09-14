@@ -48,7 +48,10 @@
   "img/fridge-1.webp",
   "img/fridge-2.webp"
  ],
- "kingfridge": [],
+ "kingfridge": [
+  "img/kingfridge-1.webp",
+  "img/kingfridge-2.webp"
+ ],
  "microwave": [
   "img/microwave-1.webp",
   "img/microwave-2.webp"
