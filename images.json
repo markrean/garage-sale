@@ -87,7 +87,11 @@
   "slakt1": [],
   "slakt2": [],
   "alex": [],
-  "kallax": [],
+  "kallax": [
+    "img/kallax-1.webp",
+    "img/kallax-2.webp",
+    "img/kallax-3.webp"
+  ],
   "vihals": [],
   "bergig": [
     "img/bergig-1.webp",
