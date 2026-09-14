@@ -84,8 +84,13 @@
     "img/pax3-2.webp"
   ],
   "brimnes": [],
-  "slakt1": [],
-  "slakt2": [],
+  "slakt1": [
+    "img/slakt1-1.webp"
+  ],
+  "slakt2": [
+    "img/slakt2-1.webp",
+    "img/slakt2-2.webp"
+  ],
   "alex": [],
   "kallax": [
     "img/kallax-1.webp",
@@ -105,5 +110,10 @@
   ],
   "palms": [],
   "ficus": [],
-  "philodendron": []
+  "philodendron": [],
+  "basket": [
+    "img/basket-1.webp",
+    "img/basket-2.webp",
+    "img/basket-3.webp"
+  ]
 }
