@@ -112,7 +112,9 @@
     "img/kallax-3.webp",
     "img/kallax-4.webp"
   ],
-  "vihals": [],
+  "vihals": [
+    "img/vihals-1.webp"
+  ],
   "bergig": [
     "img/bergig-1.webp",
     "img/bergig-2.webp",
@@ -165,5 +167,8 @@
   ],
   "ironing": [
     "img/ironing-1.webp"
+  ],
+  "fern": [
+    "img/fern-1.webp"
   ]
 }
