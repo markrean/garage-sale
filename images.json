@@ -1,177 +1,184 @@
 {
-  "sonos": [
-    "img/sonos-1.webp",
-    "img/sonos-2.webp",
-    "img/sonos-3.webp",
-    "img/sonos-4.webp"
-  ],
-  "symfonisk": [
-    "img/symfonisk-1.webp"
-  ],
-  "lgtv": [
-    "img/lgtv-1.webp"
-  ],
-  "ps5": [
-    "img/ps5-1.webp"
-  ],
-  "dell": [],
-  "lighting": [
-    "img/lighting-1.webp",
-    "img/lighting-2.webp",
-    "img/lighting-3.webp",
-    "img/lighting-4.webp",
-    "img/lighting-5.webp"
-  ],
-  "nuki": [
-    "img/nuki-1.webp",
-    "img/nuki-2.webp"
-  ],
-  "aqara": [
-    "img/aqara-1.webp",
-    "img/aqara-2.webp"
-  ],
-  "philips": [
-    "img/philips-3.webp",
-    "img/philips-1.webp",
-    "img/philips-2.webp"
-  ],
-  "dishwasher": [
-    "img/dishwasher-3.webp",
-    "img/dishwasher-1.webp",
-    "img/dishwasher-2.webp"
-  ],
-  "oven": [
-    "img/oven-1.webp",
-    "img/oven-2.webp"
-  ],
-  "fridge": [
-    "img/fridge-1.webp",
-    "img/fridge-2.webp"
-  ],
-  "kingfridge": [],
-  "microwave": [
-    "img/microwave-1.webp",
-    "img/microwave-2.webp"
-  ],
-  "kitchenaid": [
-    "img/kitchenaid-1.webp"
-  ],
-  "ninja": [
-    "img/ninja-1.webp"
-  ],
-  "toasters": [
-    "img/toasters-1.webp"
-  ],
-  "roborock": [
-    "img/roborock-1.webp"
-  ],
-  "dyson": [
-    "img/dyson-1.webp",
-    "img/dyson-2.webp"
-  ],
-  "washer": [
-    "img/washer-1.webp"
-  ],
-  "dryer": [
-    "img/dryer-1.webp"
-  ],
-  "starkvind": [
-    "img/starkvind-1.webp"
-  ],
-  "kivik": [
-    "img/kivik-1.webp",
-    "img/kivik-2.webp"
-  ],
-  "keter": [
-    "img/keter-1.webp"
-  ],
-  "oskarshamn": [
-    "img/oskarshamn-1.webp",
-    "img/oskarshamn-2.webp"
-  ],
-  "dining": [],
-  "pax8": [],
-  "pax3": [
-    "img/pax3-1.webp",
-    "img/pax3-2.webp"
-  ],
-  "brimnes": [],
-  "slakt1": [
-    "img/slakt1-1.webp"
-  ],
-  "slakt2": [
-    "img/slakt2-1.webp",
-    "img/slakt2-2.webp"
-  ],
-  "alex": [
-    "img/alex-1.webp"
-  ],
-  "kallax": [
-    "img/kallax-1.webp",
-    "img/kallax-2.webp",
-    "img/kallax-3.webp",
-    "img/kallax-4.webp"
-  ],
-  "vihals": [
-    "img/vihals-1.webp"
-  ],
-  "bergig": [
-    "img/bergig-1.webp",
-    "img/bergig-2.webp",
-    "img/bergig-3.webp"
-  ],
-  "bissa": [
-    "img/bissa-1.webp"
-  ],
-  "nysjon": [
-    "img/nysjon-1.webp",
-    "img/nysjon-2.webp"
-  ],
-  "palms": [
-    "img/palms-1.webp"
-  ],
-  "ficus": [
-    "img/ficus-1.webp"
-  ],
-  "philodendron": [
-    "img/philodendron-1.webp"
-  ],
-  "basket": [
-    "img/basket-1.webp",
-    "img/basket-2.webp",
-    "img/basket-3.webp"
-  ],
-  "olserod": [
-    "img/olserod-1.webp",
-    "img/oskarshamn-2.webp"
-  ],
-  "sony": [
-    "img/sony-1.webp"
-  ],
-  "jabra": [
-    "img/jabra-1.webp"
-  ],
-  "heater": [
-    "img/heater-1.webp",
-    "img/heater-2.webp"
-  ],
-  "pulse": [
-    "img/pulse-1.webp",
-    "img/pulse-2.webp"
-  ],
-  "sansevieria": [
-    "img/sansevieria-1.webp"
-  ],
-  "besta": [
-    "img/besta-1.webp"
-  ],
-  "ironing": [
-    "img/ironing-1.webp"
-  ],
-  "fern": [
-    "img/fern-1.webp"
-  ],
-  "boxes": [
-    "img/boxes-1.webp"
-  ]
+ "sonos": [
+  "img/sonos-1.webp",
+  "img/sonos-2.webp",
+  "img/sonos-3.webp",
+  "img/sonos-4.webp"
+ ],
+ "symfonisk": [
+  "img/symfonisk-1.webp"
+ ],
+ "lgtv": [
+  "img/lgtv-1.webp"
+ ],
+ "ps5": [
+  "img/ps5-1.webp"
+ ],
+ "dell": [],
+ "lighting": [
+  "img/lighting-1.webp",
+  "img/lighting-2.webp",
+  "img/lighting-3.webp",
+  "img/lighting-4.webp",
+  "img/lighting-5.webp"
+ ],
+ "nuki": [
+  "img/nuki-1.webp",
+  "img/nuki-2.webp"
+ ],
+ "aqara": [
+  "img/aqara-1.webp",
+  "img/aqara-2.webp"
+ ],
+ "philips": [
+  "img/philips-3.webp",
+  "img/philips-1.webp",
+  "img/philips-2.webp"
+ ],
+ "dishwasher": [
+  "img/dishwasher-3.webp",
+  "img/dishwasher-1.webp",
+  "img/dishwasher-2.webp"
+ ],
+ "oven": [
+  "img/oven-1.webp",
+  "img/oven-2.webp"
+ ],
+ "fridge": [
+  "img/fridge-1.webp",
+  "img/fridge-2.webp"
+ ],
+ "kingfridge": [],
+ "microwave": [
+  "img/microwave-1.webp",
+  "img/microwave-2.webp"
+ ],
+ "kitchenaid": [
+  "img/kitchenaid-1.webp"
+ ],
+ "ninja": [
+  "img/ninja-1.webp"
+ ],
+ "toasters": [
+  "img/toasters-1.webp"
+ ],
+ "roborock": [
+  "img/roborock-1.webp"
+ ],
+ "dyson": [
+  "img/dyson-1.webp",
+  "img/dyson-2.webp"
+ ],
+ "washer": [
+  "img/washer-1.webp"
+ ],
+ "dryer": [
+  "img/dryer-1.webp"
+ ],
+ "starkvind": [
+  "img/starkvind-1.webp"
+ ],
+ "kivik": [
+  "img/kivik-1.webp",
+  "img/kivik-2.webp"
+ ],
+ "keter": [
+  "img/keter-1.webp"
+ ],
+ "oskarshamn": [
+  "img/oskarshamn-1.webp",
+  "img/oskarshamn-2.webp"
+ ],
+ "dining": [],
+ "pax8": [],
+ "pax3": [
+  "img/pax3-1.webp",
+  "img/pax3-2.webp"
+ ],
+ "brimnes": [],
+ "slakt1": [
+  "img/slakt1-1.webp"
+ ],
+ "slakt2": [
+  "img/slakt2-1.webp",
+  "img/slakt2-2.webp"
+ ],
+ "alex": [
+  "img/alex-1.webp"
+ ],
+ "kallax": [
+  "img/kallax-1.webp",
+  "img/kallax-2.webp",
+  "img/kallax-3.webp",
+  "img/kallax-4.webp"
+ ],
+ "vihals": [
+  "img/vihals-1.webp"
+ ],
+ "bergig": [
+  "img/bergig-1.webp",
+  "img/bergig-2.webp",
+  "img/bergig-3.webp"
+ ],
+ "bissa": [
+  "img/bissa-1.webp"
+ ],
+ "nysjon": [
+  "img/nysjon-1.webp",
+  "img/nysjon-2.webp"
+ ],
+ "palms": [
+  "img/palms-1.webp"
+ ],
+ "ficus": [
+  "img/ficus-1.webp"
+ ],
+ "philodendron": [
+  "img/philodendron-1.webp"
+ ],
+ "basket": [
+  "img/basket-1.webp",
+  "img/basket-2.webp",
+  "img/basket-3.webp"
+ ],
+ "olserod": [
+  "img/olserod-1.webp",
+  "img/oskarshamn-2.webp"
+ ],
+ "sony": [
+  "img/sony-1.webp"
+ ],
+ "jabra": [
+  "img/jabra-1.webp"
+ ],
+ "heater": [
+  "img/heater-1.webp",
+  "img/heater-2.webp"
+ ],
+ "pulse": [
+  "img/pulse-1.webp",
+  "img/pulse-2.webp"
+ ],
+ "sansevieria": [
+  "img/sansevieria-1.webp"
+ ],
+ "besta": [
+  "img/besta-1.webp"
+ ],
+ "ironing": [
+  "img/ironing-1.webp"
+ ],
+ "fern": [
+  "img/fern-1.webp"
+ ],
+ "boxes": [
+  "img/boxes-1.webp"
+ ],
+ "toiletseat": [
+  "img/toiletseat-1.webp",
+  "img/toiletseat-2.webp"
+ ],
+ "fitness": [
+  "img/fitness-1.webp"
+ ]
 }

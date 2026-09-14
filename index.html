@@ -201,7 +201,7 @@
    כדי להראות איך הלייטבוקס והמעבר בין תמונות עובדים.
    ====================================================================== */
 
-const CATS = ["elec","smart","kitchen","laundry","furniture","plants"];
+const CATS = ["elec","smart","kitchen","laundry","furniture","plants","other"];
 
 const UI = {
   he:{
@@ -211,7 +211,7 @@ const UI = {
     lede:"אני עוזב את הדירה, וכל מה שבה מחפש בית חדש. המון פריטים נרכשו בחצי השנה–שנה האחרונה ונראים כחדשים. הכול עדיין מורכב ועובד בדירה, אז אפשר לראות הכול בביקור אחד. מי שלוקח כמה פריטים — מקבל מחיר.",
     terms:[["איסוף עצמי","ההובלה והפירוק על הקונה"],["תבואו לבקר לראות","הכול מורכב בדירה וניתן לראות בפעולה"],["הנחה לחבילה","לוקחים כמה פריטים? נסגור מחיר"]],
     all:"הכול",
-    cats:{elec:"אלקטרוניקה",smart:"בית חכם",kitchen:"מטבח",laundry:"כביסה וניקיון",furniture:"ריהוט",plants:"צמחים"},
+    cats:{elec:"אלקטרוניקה",smart:"בית חכם",kitchen:"מטבח",laundry:"כביסה וניקיון",furniture:"ריהוט",plants:"צמחים",other:"שונות"},
     search:"חיפוש: מקרר, PAX, סונוס…",
     shown:(n,t)=>`מוצגים <b>${n}</b> מתוך ${t} פריטים`,
     more:"פרטים נוספים",
@@ -237,7 +237,7 @@ const UI = {
     lede:"Я съезжаю с квартиры, и всё, что в ней, ищет новый дом. Много вещей куплено за последние полгода–год, и выглядят они как новые. Всё ещё собрано и работает в квартире — можно посмотреть всё за один визит. Берёте несколько вещей — договоримся о цене.",
     terms:[["Самовывоз","Перевозка и разборка — на покупателе"],["Приходите проверить","Всё собрано и работает, можно проверить на месте"],["Скидка за набор","Если берёте несколько вещей — сделаю цену"]],
     all:"Всё",
-    cats:{elec:"Электроника",smart:"Умный дом",kitchen:"Кухня",laundry:"Стирка и уборка",furniture:"Мебель",plants:"Растения"},
+    cats:{elec:"Электроника",smart:"Умный дом",kitchen:"Кухня",laundry:"Стирка и уборка",furniture:"Мебель",plants:"Растения",other:"Разное"},
     search:"Поиск: холодильник, PAX, Sonos…",
     shown:(n,t)=>`Показано <b>${n}</b> из ${t}`,
     more:"Подробнее",
@@ -263,7 +263,7 @@ const UI = {
     lede:"I'm moving out, and everything in the apartment is looking for a new home. A lot of it was bought in the last six months to a year and looks new. It's all still installed and running, so you can see everything in one visit. Take a few items and we'll agree on a price.",
     terms:[["Self pickup","Transport and disassembly are on the buyer"],["Come and see it","Everything is installed and can be seen working"],["Bundle discount","Taking several items? We'll make a price"]],
     all:"All",
-    cats:{elec:"Electronics",smart:"Smart home",kitchen:"Kitchen",laundry:"Laundry & cleaning",furniture:"Furniture",plants:"Plants"},
+    cats:{elec:"Electronics",smart:"Smart home",kitchen:"Kitchen",laundry:"Laundry & cleaning",furniture:"Furniture",plants:"Plants",other:"Other"},
     search:"Search: fridge, PAX, Sonos…",
     shown:(n,t)=>`Showing <b>${n}</b> of ${t} items`,
     more:"More details",
@@ -604,19 +604,19 @@ const ITEMS = [
    d:"Two IKEA Kallax shelving units, six months old and in as-new condition:\n• Kallax 4×4 with base frame and legs\n• Kallax 2×4 in white with base frame and legs\n• 2 storage inserts\n• 4 drawers\n• One insert with 4 shelves for paperwork\nTake both or just one."}},
 
 {id:"vihals", c:"furniture", p:400, o:845, imgs:[],
- he:{n:"יחידת אחסון Vihals, 10 מדפים",s:"לבן, 95×37×200 ס״מ.",
-   d:"יחידת מדפים איקאה Vihals בצבע לבן, במידות 95×37×200 ס״מ, עם 10 מדפים.\nגבוהה וצרה יחסית, נכנסת יפה בפינה או ליד שולחן עבודה.\nהקופסאות שרואים בתמונה נמכרות בנפרד ברשימה — סט של 31 קופסאות KUGGIS ו-PANSARTAX."},
- ru:{n:"Стеллаж Vihals, 10 полок",s:"Белый, 95×37×200 см.",
-   d:"Стеллаж IKEA Vihals, белый, 95×37×200 см, 10 полок.\nВысокий и достаточно узкий — хорошо встаёт в угол или рядом с рабочим столом.\nКоробки с фото продаются отдельно — набор из 31 коробки KUGGIS и PANSARTAX."},
- en:{n:"Vihals shelving unit, 10 shelves",s:"White, 95×37×200 cm.",
-   d:"IKEA Vihals shelving unit in white, 95×37×200 cm, with 10 shelves.\nTall and fairly narrow, fits nicely in a corner or beside a desk.\nThe boxes in the photo are sold separately — a set of 31 KUGGIS and PANSARTAX boxes."}},
+ he:{n:"יחידת אחסון Vihals איקאה, 10 מדפים",s:"לבן, 95×37×200 ס״מ.",
+   d:"יחידת מדפים איקאה Vihals בצבע לבן, במידות 95×37×200 ס״מ, עם 10 מדפים.\nגבוהה וצרה יחסית, נכנסת יפה בפינה או ליד שולחן עבודה.\nהקופסאות שרואים בתמונה נמכרות בנפרד ברשימה — סט של קופסאות KUGGIS ו-PANSARTAX."},
+ ru:{n:"Стеллаж IKEA Vihals, 10 полок",s:"Белый, 95×37×200 см.",
+   d:"Стеллаж IKEA Vihals, белый, 95×37×200 см, 10 полок.\nВысокий и достаточно узкий — хорошо встаёт в угол или рядом с рабочим столом.\nКоробки с фото продаются отдельно — набор коробок KUGGIS и PANSARTAX."},
+ en:{n:"IKEA Vihals shelving unit, 10 shelves",s:"White, 95×37×200 cm.",
+   d:"IKEA Vihals shelving unit in white, 95×37×200 cm, with 10 shelves.\nTall and fairly narrow, fits nicely in a corner or beside a desk.\nThe boxes in the photo are sold separately — a set of KUGGIS and PANSARTAX boxes."}},
 
 {id:"boxes", c:"furniture", p:800, o:1900, imgs:[],
- he:{n:"סט קופסאות אחסון KUGGIS ו-PANSARTAX, 31 יחידות",s:"כל הקופסאות שבתמונה, ביחד.",
-   d:"סט שלם של קופסאות אחסון מאיקאה, 31 יחידות — הכול נמכר ביחד:\n• 3 קופסאות KUGGIS עם מכסה 37×54×21: מחיר בחנות - 125 ₪ ליחידה\n• 3 קופסאות אחסון KUGGIS עם מכסה 32×32×32: מחיר בחנות - 95 ₪ ליחידה\n• 9 קופסאות KUGGIS עם מכסה 18×26×15 באפור בהיר: מחיר בחנות - 40 ₪ ליחידה\n• 3 מחיצות KUGGIS עם 8 תאים: מחיר בחנות - 49 ₪ ליחידה\n• 2 מעמדי כתבי-עת KUGGIS: מחיר בחנות - 69 ₪ ליחידה\n• 8 קופסאות PANSARTAX קטנות: מחיר בחנות - 45 ₪ ליחידה\n• 2 קופסאות PANSARTAX בינוניות: מחיר בחנות - 75 ₪ ליחידה\n• קופסת PANSARTAX גדולה: מחיר בחנות - 89 ₪\nסך הכול בחנות - 1,904 ₪.\nבתמונה הן מסודרות ביחידת המדפים Vihals, שנמכרת בנפרד ברשימה."},
- ru:{n:"Набор коробок для хранения KUGGIS и PANSARTAX, 31 шт.",s:"Все коробки с фото, одним лотом.",
-   d:"Полный набор коробок для хранения IKEA, 31 штука — продаётся целиком:\n• 3 коробки KUGGIS с крышкой 37×54×21: цена в магазине - 125 ₪ за штуку\n• 3 коробки KUGGIS с крышкой 32×32×32: цена в магазине - 95 ₪ за штуку\n• 9 коробок KUGGIS с крышкой 18×26×15, светло-серые: цена в магазине - 40 ₪ за штуку\n• 3 вставки KUGGIS на 8 отделений: цена в магазине - 49 ₪ за штуку\n• 2 подставки для журналов KUGGIS: цена в магазине - 69 ₪ за штуку\n• 8 маленьких коробок PANSARTAX: цена в магазине - 45 ₪ за штуку\n• 2 средние коробки PANSARTAX: цена в магазине - 75 ₪ за штуку\n• 1 большая коробка PANSARTAX: цена в магазине - 89 ₪\nИтого в магазине - 1 904 ₪.\nНа фото они стоят в стеллаже Vihals, который продаётся отдельно."},
- en:{n:"KUGGIS & PANSARTAX storage box set, 31 pieces",s:"Every box in the photo, as one lot.",
+ he:{n:"סט ענק של קופסאות אחסון איקאה, 34 יחידות",s:"כל הקופסאות שבתמונה, ביחד.",
+   d:"סט שלם של קופסאות אחסון מאיקאה — הכול נמכר ביחד:\n• 3 קופסאות KUGGIS עם מכסה 37×54×21: מחיר בחנות - 125 ₪ ליחידה\n• 3 קופסאות אחסון KUGGIS עם מכסה 32×32×32: מחיר בחנות - 95 ₪ ליחידה\n• 9 קופסאות KUGGIS עם מכסה 18×26×15 באפור בהיר: מחיר בחנות - 40 ₪ ליחידה\n• 3 מחיצות KUGGIS עם 8 תאים: מחיר בחנות - 49 ₪ ליחידה\n• 2 מעמדי כתבי-עת KUGGIS: מחיר בחנות - 69 ₪ ליחידה\n• 8 קופסאות PANSARTAX קטנות: מחיר בחנות - 45 ₪ ליחידה\n• 2 קופסאות PANSARTAX בינוניות: מחיר בחנות - 75 ₪ ליחידה\n• קופסת PANSARTAX גדולה: מחיר בחנות - 89 ₪\nסך הכול בחנות - 1,904 ₪.\nבתמונה הן מסודרות ביחידת המדפים Vihals, שנמכרת בנפרד ברשימה."},
+ ru:{n:"Огромный набор коробок для хранения IKEA, 34 шт.",s:"Все коробки с фото, одним лотом.",
+   d:"Полный набор коробок для хранения IKEA — продаётся целиком:\n• 3 коробки KUGGIS с крышкой 37×54×21: цена в магазине - 125 ₪ за штуку\n• 3 коробки KUGGIS с крышкой 32×32×32: цена в магазине - 95 ₪ за штуку\n• 9 коробок KUGGIS с крышкой 18×26×15, светло-серые: цена в магазине - 40 ₪ за штуку\n• 3 вставки KUGGIS на 8 отделений: цена в магазине - 49 ₪ за штуку\n• 2 подставки для журналов KUGGIS: цена в магазине - 69 ₪ за штуку\n• 8 маленьких коробок PANSARTAX: цена в магазине - 45 ₪ за штуку\n• 2 средние коробки PANSARTAX: цена в магазине - 75 ₪ за штуку\n• 1 большая коробка PANSARTAX: цена в магазине - 89 ₪\nИтого в магазине - 1 904 ₪.\nНа фото они стоят в стеллаже Vihals, который продаётся отдельно."},
+ en:{n:"Huge IKEA storage box set, 34 pieces",s:"Every box in the photo, as one lot.",
    d:"A complete set of IKEA storage boxes, 31 pieces, sold together:\n• 3 KUGGIS boxes with lid 37×54×21: retail price - ₪125 each\n• 3 KUGGIS storage boxes with lid 32×32×32: retail price - ₪95 each\n• 9 KUGGIS boxes with lid 18×26×15, light grey: retail price - ₪40 each\n• 3 KUGGIS inserts with 8 compartments: retail price - ₪49 each\n• 2 KUGGIS magazine files: retail price - ₪69 each\n• 8 small PANSARTAX boxes: retail price - ₪45 each\n• 2 medium PANSARTAX boxes: retail price - ₪75 each\n• 1 large PANSARTAX box: retail price - ₪89\nRetail total - ₪1,904.\nIn the photo they sit in the Vihals shelving unit, sold separately in this list."}},
 {id:"bergig", c:"furniture", p:300, o:595, imgs:[],
  he:{n:"מעמד לספרים Bergig",s:"עם אחסון, לבן. מתאים לחדר ילדים.",
@@ -686,7 +686,23 @@ const ITEMS = [
  ru:{n:"Огромный вьющийся филодендрон",s:"Растёт 5 лет, в кашпо кремово-белого цвета.",
    d:"Огромный красивый вьющийся филодендрон, растёт у меня 5 лет, в прочном качественном кашпо кремово-белого цвета.\nЭффектное растение, которое заполняет собой целый угол."},
  en:{n:"Huge climbing philodendron",s:"Grown for 5 years, in a cream-white planter.",
-   d:"A huge, handsome climbing philodendron I've grown for five years, in a sturdy quality planter in cream white.\nAn impressive plant that fills a whole corner."}}
+   d:"A huge, handsome climbing philodendron I've grown for five years, in a sturdy quality planter in cream white.\nAn impressive plant that fills a whole corner."}},
+{id:"toiletseat", c:"other", p:50, o:null, imgs:[],
+ he:{n:"מושב אסלה לילדים עם סולם",s:"אפור-לבן, מתקפל.",
+   d:"מושב אסלה לילדים עם סולם ומדרגות, בצבע אפור ולבן.\nמושב רך ונוח בגודל מותאם לילדים, עם ידיות אחיזה משני הצדדים.\nשתי מדרגות עם משטח נגד החלקה, וגובה מתכוונן לפי גיל הילד.\nמתקפל לאחסון, מתאים לרוב האסלות הסטנדרטיות.\nבמצב טוב מאוד, שמור ונקי."},
+ ru:{n:"Детское сиденье для унитаза со ступенькой",s:"Серо-белое, складное.",
+   d:"Детское сиденье для унитаза со ступеньками-лесенкой, серо-белое.\nМягкое сиденье детского размера с ручками по бокам.\nДве ступеньки с нескользящей поверхностью, высота регулируется под рост ребёнка.\nСкладывается для хранения, подходит к большинству стандартных унитазов.\nВ очень хорошем состоянии, чистое."},
+ en:{n:"Kids toilet seat with step ladder",s:"Grey and white, folds flat.",
+   d:"Children's toilet training seat with a built-in step ladder, in grey and white.\nSoft child-size seat with handles on both sides.\nTwo non-slip steps and adjustable height to suit the child.\nFolds flat for storage and fits most standard toilets.\nIn very good condition, clean and well kept."}},
+
+{id:"fitness", c:"other", p:250, o:null, imgs:[],
+ he:{n:"סט מוצרי כושר לבית",s:"מוט מתח, גלגל בטן, משקולות ומזרן.",
+   d:"סט שלם לאימון בבית, נמכר ביחד:\n• מוט מתח שמתלבש על משקוף הדלת, ללא קידוח\n• 2 מכשירי בטן — גלגל בטן ומזרן תרגילים\n• 2 משקולות יד מתכווננות עם דיסקיות, 1–10 ק״ג כל אחת\nהכול עובד ושמיש, עם סימני שימוש על הדיסקיות."},
+ ru:{n:"Набор для домашних тренировок",s:"Турник, ролик для пресса, гантели и коврик.",
+   d:"Полный набор для тренировок дома, продаётся целиком:\n• Турник в дверной проём, без сверления\n• 2 тренажёра для пресса — ролик и коврик для упражнений\n• 2 разборные гантели с дисками, 1–10 кг каждая\nВсё рабочее и пригодное к использованию, на дисках следы использования."},
+ en:{n:"Home fitness set",s:"Pull-up bar, ab wheel, dumbbells and mat.",
+   d:"Complete home workout set, sold together:\n• Doorway pull-up bar that mounts on the frame, no drilling\n• 2 ab trainers — an ab roller wheel and an exercise mat\n• 2 adjustable dumbbells with plates, 1–10 kg each\nAll working and usable; the plates show signs of use."}},
+
 ];
 
 /* ======================================================================
