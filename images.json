@@ -6,7 +6,9 @@
     "img/sonos-4.webp"
   ],
   "symfonisk": [],
-  "lgtv": [],
+  "lgtv": [
+    "img/lgtv-1.webp"
+  ],
   "ps5": [
     "img/ps5-1.webp"
   ],
@@ -82,7 +84,8 @@
     "img/keter-1.webp"
   ],
   "oskarshamn": [
-    "img/oskarshamn-1.webp"
+    "img/oskarshamn-1.webp",
+    "img/oskarshamn-2.webp"
   ],
   "dining": [],
   "pax8": [],
@@ -98,11 +101,14 @@
     "img/slakt2-1.webp",
     "img/slakt2-2.webp"
   ],
-  "alex": [],
+  "alex": [
+    "img/alex-1.webp"
+  ],
   "kallax": [
     "img/kallax-1.webp",
     "img/kallax-2.webp",
-    "img/kallax-3.webp"
+    "img/kallax-3.webp",
+    "img/kallax-4.webp"
   ],
   "vihals": [],
   "bergig": [
@@ -132,7 +138,8 @@
     "img/basket-3.webp"
   ],
   "olserod": [
-    "img/olserod-1.webp"
+    "img/olserod-1.webp",
+    "img/oskarshamn-2.webp"
   ],
   "sony": [
     "img/sony-1.webp"
