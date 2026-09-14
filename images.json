@@ -110,7 +110,9 @@
     "img/bergig-2.webp",
     "img/bergig-3.webp"
   ],
-  "bissa": [],
+  "bissa": [
+    "img/bissa-1.webp"
+  ],
   "nysjon": [
     "img/nysjon-1.webp",
     "img/nysjon-2.webp"
@@ -145,5 +147,8 @@
   "pulse": [
     "img/pulse-1.webp",
     "img/pulse-2.webp"
+  ],
+  "sansevieria": [
+    "img/sansevieria-1.webp"
   ]
 }
