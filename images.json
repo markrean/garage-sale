@@ -90,12 +90,18 @@
   "img/oskarshamn-2.webp"
  ],
  "dining": [],
- "pax8": [],
+ "pax8": [
+  "img/pax8-1.webp"
+ ],
  "pax3": [
   "img/pax3-1.webp",
   "img/pax3-2.webp"
  ],
- "brimnes": [],
+ "brimnes": [
+  "img/brimnes-1.webp",
+  "img/brimnes-2.webp",
+  "img/brimnes-3.webp"
+ ],
  "slakt1": [
   "img/slakt1-1.webp"
  ],
