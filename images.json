@@ -140,5 +140,9 @@
   "heater": [
     "img/heater-1.webp",
     "img/heater-2.webp"
+  ],
+  "pulse": [
+    "img/pulse-1.webp",
+    "img/pulse-2.webp"
   ]
 }
