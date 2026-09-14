@@ -108,12 +108,19 @@
     "img/nysjon-1.webp",
     "img/nysjon-2.webp"
   ],
-  "palms": [],
-  "ficus": [],
+  "palms": [
+    "img/palms-1.webp"
+  ],
+  "ficus": [
+    "img/ficus-1.webp"
+  ],
   "philodendron": [],
   "basket": [
     "img/basket-1.webp",
     "img/basket-2.webp",
     "img/basket-3.webp"
+  ],
+  "olserod": [
+    "img/olserod-1.webp"
   ]
 }
