@@ -130,5 +130,15 @@
   ],
   "olserod": [
     "img/olserod-1.webp"
+  ],
+  "sony": [
+    "img/sony-1.webp"
+  ],
+  "jabra": [
+    "img/jabra-1.webp"
+  ],
+  "heater": [
+    "img/heater-1.webp",
+    "img/heater-2.webp"
   ]
 }
