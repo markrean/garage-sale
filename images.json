@@ -14,7 +14,11 @@
  "ps5": [
   "img/ps5-1.webp"
  ],
- "dell": [],
+ "dell": [
+  "img/dell-1.webp",
+  "img/dell-2.webp",
+  "img/dell-3.webp"
+ ],
  "lighting": [
   "img/lighting-1.webp",
   "img/lighting-2.webp",
