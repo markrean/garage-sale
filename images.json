@@ -5,7 +5,9 @@
     "img/sonos-3.webp",
     "img/sonos-4.webp"
   ],
-  "symfonisk": [],
+  "symfonisk": [
+    "img/symfonisk-1.webp"
+  ],
   "lgtv": [
     "img/lgtv-1.webp"
   ],
