@@ -3,6 +3,13 @@
   "heater",
   "sony",
   "ninja",
-  "philips"
+  "philips",
+  "fridge",
+  "oven",
+  "ps5",
+  "microwave",
+  "kitchenaid",
+  "washer",
+  "nuki"
  ]
 }
