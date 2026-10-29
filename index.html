@@ -210,7 +210,7 @@
    כדי להראות איך הלייטבוקס והמעבר בין תמונות עובדים.
    ====================================================================== */
 
-const CATS = ["elec","smart","kitchen","laundry","furniture","plants","other"];
+const CATS = ["furniture","elec","smart","kitchen","laundry","plants","other"];
 
 const UI = {
   he:{
@@ -528,7 +528,7 @@ const ITEMS = [
  en:{n:"IKEA Kivik 3-seat sofa with chaise",s:"Dark grey, Tresund fabric.",
    d:"IKEA Kivik three-seat sofa with chaise longue in dark grey (Tresund anthracite).\nBig and genuinely comfortable, with deep seats for sitting or lying down. Comes apart for transport."}},
 
-{id:"keter", c:"furniture", p:1200, o:2400, imgs:[],
+{id:"keter", c:"furniture", p:1000, o:2400, imgs:[],
  he:{n:"סט ישיבה ענק למרפסת / גינה קורפו כתר",s:"2 ספות, 2 כורסאות, 2 שולחנות וכריות. אפור כהה.",
    d:"סט ישיבה ענק של כתר פלסטיק, דגם קורפו, בצבע אפור כהה:\n• ספה 3 מקומות\n• ספה 2 מקומות\n• זוג כורסאות יחיד\n• שולחן קפה ושולחן עם אחסון\n• כריות ישיבה\nמתאים למרפסת, לגינה או לחצר, עמיד לשמש ולגשם. רוב הפריטים נרכשו לפני חצי שנה."},
  ru:{n:"Большой комплект мебели для балкона / сада Keter Corfu",s:"2 дивана, 2 кресла, 2 столика и подушки. Тёмно-серый.",
@@ -630,7 +630,7 @@ const ITEMS = [
    d:"Полный набор коробок для хранения IKEA — продаётся целиком:\n• 3 коробки KUGGIS с крышкой 37×54×21: цена в магазине - 125 ₪ за штуку\n• 3 коробки KUGGIS с крышкой 32×32×32: цена в магазине - 95 ₪ за штуку\n• 9 коробок KUGGIS с крышкой 18×26×15, светло-серые: цена в магазине - 40 ₪ за штуку\n• 3 вставки KUGGIS на 8 отделений: цена в магазине - 49 ₪ за штуку\n• 2 подставки для журналов KUGGIS: цена в магазине - 69 ₪ за штуку\n• 8 маленьких коробок PANSARTAX: цена в магазине - 45 ₪ за штуку\n• 2 средние коробки PANSARTAX: цена в магазине - 75 ₪ за штуку\n• 1 большая коробка PANSARTAX: цена в магазине - 89 ₪\nИтого в магазине - 1 904 ₪.\nНа фото они стоят в стеллаже Vihals, который продаётся отдельно."},
  en:{n:"Huge IKEA storage box set, 34 pieces",s:"Every box in the photo, as one lot.",
    d:"A complete set of IKEA storage boxes, 31 pieces, sold together:\n• 3 KUGGIS boxes with lid 37×54×21: retail price - ₪125 each\n• 3 KUGGIS storage boxes with lid 32×32×32: retail price - ₪95 each\n• 9 KUGGIS boxes with lid 18×26×15, light grey: retail price - ₪40 each\n• 3 KUGGIS inserts with 8 compartments: retail price - ₪49 each\n• 2 KUGGIS magazine files: retail price - ₪69 each\n• 8 small PANSARTAX boxes: retail price - ₪45 each\n• 2 medium PANSARTAX boxes: retail price - ₪75 each\n• 1 large PANSARTAX box: retail price - ₪89\nRetail total - ₪1,904.\nIn the photo they sit in the Vihals shelving unit, sold separately in this list."}},
-{id:"bergig", c:"furniture", p:300, o:595, imgs:[],
+{id:"bergig", c:"furniture", p:250, o:595, imgs:[],
  he:{n:"מעמד לספרים איקאה Bergig",s:"עם אחסון, לבן. מתאים לחדר ילדים.",
    d:"מעמד לספרים איקאה Bergig בצבע לבן, עם תא אחסון מתחת.\nמציג את הספרים עם הכריכה קדימה, מה שעוזר לילדים לבחור בעצמם."},
  ru:{n:"Стеллаж для книг IKEA Bergig",s:"С ящиком для хранения, белый. Для детской.",
@@ -669,14 +669,14 @@ const ITEMS = [
    d:"Сансевиерия сорта Laurentii — зелёные листья с жёлтой каймой, в народе «тёщин язык».\nКрупное, густое растение в белом керамическом горшке.\nОдно из самых неприхотливых комнатных растений: переносит слабый свет, редкий полив и долгие отъезды хозяев."},
  en:{n:"Large snake plant (Sansevieria)",s:"Big, healthy plant in a white pot.",
    d:"Sansevieria trifasciata 'Laurentii' — green leaves with yellow edges, commonly called a snake plant or mother-in-law's tongue.\nA large, full plant in a white ceramic pot.\nOne of the easiest houseplants there is: tolerates low light, infrequent watering and long trips away."}},
-{id:"fern", c:"plants", p:250, o:null, imgs:[],
- he:{n:"שרך בוסטון גדול עם אדנית ומעמד",s:"אדנית קרמיקה ומעמד לבן, הכול ביחד.",
-   d:"שרך בוסטון גדול ומלא, בתוך אדנית קרמיקה לבנה ועל מעמד מתכת לבן — נמכרים ביחד.\nגדל אצלי במרפסת. אוהב אור עקיף והשקיה סדירה, ומחזיק יפה גם בפנים ליד חלון."},
- ru:{n:"Большой бостонский папоротник с кашпо и подставкой",s:"Керамическое кашпо и белая подставка, всё вместе.",
-   d:"Большой пышный бостонский папоротник в белом керамическом кашпо на белой металлической подставке — продаются вместе.\nРос у меня на балконе. Любит рассеянный свет и регулярный полив, хорошо себя чувствует и в доме у окна."},
- en:{n:"Large Boston fern with pot and stand",s:"Ceramic pot and white stand, all together.",
-   d:"A large, full Boston fern in a white ceramic pot on a white metal stand — sold together.\nGrown on my balcony. Likes indirect light and regular watering, and does well indoors near a window too."}},
-{id:"palms", c:"plants", p:1200, o:2500, approx:true, imgs:[],
+{id:"fern", c:"plants", p:200, o:null, imgs:[],
+ he:{n:"שרך בוסטון ענק עם אדנית ומעמד",s:"אדנית קרמיקה ומעמד לבן, הכול ביחד.",
+   d:"שרך בוסטון ענק ומלא, בתוך אדנית קרמיקה לבנה ועל מעמד מתכת לבן — נמכרים ביחד.\nגדל אצלי במרפסת. אוהב אור עקיף והשקיה סדירה, ומחזיק יפה גם בפנים ליד חלון."},
+ ru:{n:"Огромный бостонский папоротник с кашпо и подставкой",s:"Керамическое кашпо и белая подставка, всё вместе.",
+   d:"Огромный пышный бостонский папоротник в белом керамическом кашпо на белой металлической подставке — продаются вместе.\nРос у меня на балконе. Любит рассеянный свет и регулярный полив, хорошо себя чувствует и в доме у окна."},
+ en:{n:"Huge Boston fern with pot and stand",s:"Ceramic pot and white stand, all together.",
+   d:"A huge, full Boston fern in a white ceramic pot on a white metal stand — sold together.\nGrown on my balcony. Likes indirect light and regular watering, and does well indoors near a window too."}},
+{id:"palms", c:"plants", p:1000, o:2500, approx:true, imgs:[],
  he:{n:"2 עצי דקל גדולים מאוד",s:"גדלו 5 שנים, כולל אדניות איכותיות.",
    d:"שני עצי דקל גדולים מאוד שגדלו אצלי 5 שנים, יחד עם אדניות איכותיות ועמידות.\nמחיר בחנות של האדניות לבדן - כ-900 ₪, ומחיר בחנות של עצים בגודל כזה - כ-1,400–1,800 ₪. נמכרים כזוג."},
  ru:{n:"2 больших пальмы",s:"Растут 5 лет, с качественными кашпо.",
@@ -699,7 +699,7 @@ const ITEMS = [
    d:"Огромный красивый вьющийся филодендрон, растёт у меня 5 лет, в прочном качественном кашпо кремово-белого цвета.\nЭффектное растение, которое заполняет собой целый угол."},
  en:{n:"Huge climbing philodendron",s:"Grown for 5 years, in a cream-white planter.",
    d:"A huge, handsome climbing philodendron I've grown for five years, in a sturdy quality planter in cream white.\nAn impressive plant that fills a whole corner."}},
-{id:"toiletseat", c:"other", p:50, o:null, imgs:[],
+{id:"toiletseat", c:"other", p:20, o:null, imgs:[],
  he:{n:"מושב אסלה לילדים עם סולם",s:"אפור-לבן, מתקפל.",
    d:"מושב אסלה לילדים עם סולם ומדרגות, בצבע אפור ולבן.\nמושב רך ונוח בגודל מותאם לילדים, עם ידיות אחיזה משני הצדדים.\nשתי מדרגות עם משטח נגד החלקה, וגובה מתכוונן לפי גיל הילד.\nמתקפל לאחסון, מתאים לרוב האסלות הסטנדרטיות.\nבמצב טוב מאוד, שמור ונקי."},
  ru:{n:"Детское сиденье для унитаза со ступенькой",s:"Серо-белое, складное.",
@@ -716,11 +716,11 @@ const ITEMS = [
    d:"Complete home workout set, sold together:\n• Doorway pull-up bar that mounts on the frame, no drilling\n• 2 ab trainers — an ab roller wheel and an exercise mat\n• 2 adjustable dumbbells with plates, 1–10 kg each\nAll working and usable; the plates show signs of use."}},
 
 {id:"helmets", c:"other", p:200, o:null, imgs:[],
- he:{n:"3 קסדות אופנוע מלאות — Caberg, HJC, G-Mac",s:"Caberg, HJC ו-G-Mac. מידות M/L, נמכרות ביחד.",
+ he:{n:"3 קסדות אופנוע מלאות Caberg, HJC, G-Mac",s:"Caberg, HJC ו-G-Mac. מידות M/L, נמכרות ביחד.",
    d:"שלוש קסדות אופנוע מלאות (Full Face), נמכרות ביחד:\n• Caberg לבנה, נפתחת (מודולרית)\n• HJC אדומה-כסופה עם גרפיקה\n• G-Mac Meteor כסופה\nמידות M/L. כולן עם ויזור שלם ובטנות פנימיות, ולא עברו נפילה או שבר.\nיש סימני שימוש בצבע, בעיקר בחלק העליון של האדומה."},
- ru:{n:"3 мотошлема full-face — Caberg, HJC, G-Mac",s:"Caberg, HJC и G-Mac. Размеры M/L, продаются вместе.",
+ ru:{n:"3 мотошлема full-face Caberg, HJC, G-Mac",s:"Caberg, HJC и G-Mac. Размеры M/L, продаются вместе.",
    d:"Три полнолицевых мотошлема, продаются вместе:\n• Caberg белый, откидной (модульный)\n• HJC красно-серебристый с графикой\n• G-Mac Meteor серебристый\nРазмеры M/L. У всех целое стекло и внутренняя обивка; падений и повреждений не было.\nЕсть следы использования на краске, в основном сверху на красном."},
- en:{n:"3 full-face motorcycle helmets — Caberg, HJC, G-Mac",s:"Caberg, HJC and G-Mac. Sizes M/L, sold together.",
+ en:{n:"3 full-face motorcycle helmets Caberg, HJC, G-Mac",s:"Caberg, HJC and G-Mac. Sizes M/L, sold together.",
    d:"Three full-face motorcycle helmets, sold together:\n• Caberg white, flip-up (modular)\n• HJC red/silver with graphics\n• G-Mac Meteor silver\nSizes M/L. All have intact visors and inner liners, and none has been dropped or damaged.\nThere are paint marks from use, mainly on top of the red one."}},
 
 ];
