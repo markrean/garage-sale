@@ -68,6 +68,11 @@
   .chip .c{font-size:.76rem;margin-inline-start:5px;font-variant-numeric:tabular-nums;opacity:.75}
   .chip:hover{color:var(--ink);background:var(--blue-pale)}
   .chip[aria-pressed="true"]{background:var(--blue);color:var(--on-blue)}
+  .chiprow{display:flex;flex-wrap:wrap;align-items:center;gap:18px}
+  .avail{display:inline-flex;align-items:center;gap:7px;font-size:.9rem;font-weight:700;color:var(--muted);cursor:pointer;user-select:none;white-space:nowrap}
+  .avail:hover{color:var(--ink)}
+  .avail input{width:15px;height:15px;margin:0;accent-color:var(--blue);cursor:pointer}
+  .avail input:checked+span{color:var(--ink)}
   .searchrow{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:10px}
   .search{flex:1 1 240px}
   .search input,.catsel{width:100%;font:inherit;font-size:.95rem;font-weight:600;color:var(--ink);background:var(--panel);border:1px solid var(--line);border-radius:0;padding:10px 14px}
@@ -77,6 +82,7 @@
   .count b{color:var(--ink);font-weight:800}
   @media (max-width:640px){
     .chips{display:none}
+    .chiprow{gap:0;margin-bottom:10px}
     .catsel{display:block;flex:1 1 100%;max-width:100%}
     .searchrow{flex-wrap:wrap;gap:8px;margin-top:0}
     .search{flex:1 1 100%;min-width:0}
@@ -159,7 +165,10 @@
   <div class="terms" id="t-terms"></div>
 
   <div class="controls">
-    <div class="chips" id="chips"></div>
+    <div class="chiprow">
+      <div class="chips" id="chips"></div>
+      <label class="avail"><input type="checkbox" id="availonly"><span id="t-availonly"></span></label>
+    </div>
     <div class="searchrow">
       <select class="catsel" id="catsel" aria-label="category"></select>
       <div class="search"><input id="q" type="search" autocomplete="off"></div>
@@ -211,6 +220,7 @@ const UI = {
     lede:"אני עוזב את הדירה, וכל מה שבה מחפש בית חדש. המון פריטים נרכשו בחצי השנה–שנה האחרונה ונראים כחדשים. הכול עדיין מורכב ועובד בדירה, אז אפשר לראות הכול בביקור אחד. מי שלוקח כמה פריטים — מקבל מחיר.",
     terms:[["איסוף עצמי","ההובלה והפירוק על הקונה"],["תבואו לבקר לראות","הכול מורכב בדירה וניתן לראות בפעולה"],["הנחה לחבילה","לוקחים כמה פריטים? נסגור מחיר"]],
     all:"הכול",
+    availOnly:"הצג רק זמינים",
     cats:{elec:"אלקטרוניקה",smart:"בית חכם",kitchen:"מטבח",laundry:"כביסה וניקיון",furniture:"ריהוט",plants:"צמחים",other:"שונות"},
     search:"חיפוש: מקרר, PAX, סונוס…",
     shown:(n,t)=>`מוצגים <b>${n}</b> מתוך ${t} פריטים`,
@@ -237,6 +247,7 @@ const UI = {
     lede:"Я съезжаю с квартиры, и всё, что в ней, ищет новый дом. Много вещей куплено за последние полгода–год, и выглядят они как новые. Всё ещё собрано и работает в квартире — можно посмотреть всё за один визит. Берёте несколько вещей — договоримся о цене.",
     terms:[["Самовывоз","Перевозка и разборка — на покупателе"],["Приходите проверить","Всё собрано и работает, можно проверить на месте"],["Скидка за набор","Если берёте несколько вещей — сделаю цену"]],
     all:"Всё",
+    availOnly:"Только в наличии",
     cats:{elec:"Электроника",smart:"Умный дом",kitchen:"Кухня",laundry:"Стирка и уборка",furniture:"Мебель",plants:"Растения",other:"Разное"},
     search:"Поиск: холодильник, PAX, Sonos…",
     shown:(n,t)=>`Показано <b>${n}</b> из ${t}`,
@@ -263,6 +274,7 @@ const UI = {
     lede:"I'm moving out, and everything in the apartment is looking for a new home. A lot of it was bought in the last six months to a year and looks new. It's all still installed and running, so you can see everything in one visit. Take a few items and we'll agree on a price.",
     terms:[["Self pickup","Transport and disassembly are on the buyer"],["Come and see it","Everything is installed and can be seen working"],["Bundle discount","Taking several items? We'll make a price"]],
     all:"All",
+    availOnly:"Available only",
     cats:{elec:"Electronics",smart:"Smart home",kitchen:"Kitchen",laundry:"Laundry & cleaning",furniture:"Furniture",plants:"Plants",other:"Other"},
     search:"Search: fridge, PAX, Sonos…",
     shown:(n,t)=>`Showing <b>${n}</b> of ${t} items`,
@@ -703,8 +715,15 @@ const ITEMS = [
  en:{n:"Home fitness set",s:"Pull-up bar, ab wheel, dumbbells and mat.",
    d:"Complete home workout set, sold together:\n• Doorway pull-up bar that mounts on the frame, no drilling\n• 2 ab trainers — an ab roller wheel and an exercise mat\n• 2 adjustable dumbbells with plates, 1–10 kg each\nAll working and usable; the plates show signs of use."}},
 
-];
+{id:"helmets", c:"other", p:200, o:null, imgs:[],
+ he:{n:"3 קסדות אופנוע מלאות — Caberg, HJC, G-Mac",s:"Caberg, HJC ו-G-Mac. מידות M/L, נמכרות ביחד.",
+   d:"שלוש קסדות אופנוע מלאות (Full Face), נמכרות ביחד:\n• Caberg לבנה, נפתחת (מודולרית)\n• HJC אדומה-כסופה עם גרפיקה\n• G-Mac Meteor כסופה\nמידות M/L. כולן עם ויזור שלם ובטנות פנימיות, ולא עברו נפילה או שבר.\nיש סימני שימוש בצבע, בעיקר בחלק העליון של האדומה."},
+ ru:{n:"3 мотошлема full-face — Caberg, HJC, G-Mac",s:"Caberg, HJC и G-Mac. Размеры M/L, продаются вместе.",
+   d:"Три полнолицевых мотошлема, продаются вместе:\n• Caberg белый, откидной (модульный)\n• HJC красно-серебристый с графикой\n• G-Mac Meteor серебристый\nРазмеры M/L. У всех целое стекло и внутренняя обивка; падений и повреждений не было.\nЕсть следы использования на краске, в основном сверху на красном."},
+ en:{n:"3 full-face motorcycle helmets — Caberg, HJC, G-Mac",s:"Caberg, HJC and G-Mac. Sizes M/L, sold together.",
+   d:"Three full-face motorcycle helmets, sold together:\n• Caberg white, flip-up (modular)\n• HJC red/silver with graphics\n• G-Mac Meteor silver\nSizes M/L. All have intact visors and inner liners, and none has been dropped or damaged.\nThere are paint marks from use, mainly on top of the red one."}},
 
+];
 /* ======================================================================
    סימון "נמכר": נמצא בקובץ sold.json שליד הקובץ הזה.
    כדי לסמן פריט כנמכר, הוסיפו את המזהה שלו לרשימה, למשל:
@@ -723,6 +742,7 @@ let lang = (() => {
   return "he";
 })();
 let active = "all";
+let availOnly = false;
 let sold = new Set(SOLD_BASE);
 let adminMode = false;
 
@@ -752,8 +772,12 @@ function paintChrome(){
   $("t-who").textContent = t.who;
   $("t-fine").textContent = t.fine;
 
-  const opts = [["all", t.all, ITEMS.length]]
-    .concat(CATS.map(c => [c, t.cats[c], ITEMS.filter(i=>i.c===c).length]));
+  $("t-availonly").textContent = t.availOnly;
+  $("availonly").checked = availOnly;
+
+  const pool = visibleItems();
+  const opts = [["all", t.all, pool.length]]
+    .concat(CATS.map(c => [c, t.cats[c], pool.filter(i=>i.c===c).length]));
   chipsEl.innerHTML = opts.map(([k,label,n]) =>
     `<button class="chip" type="button" data-cat="${k}" aria-pressed="${k===active}">${label}<span class="c">${n}</span></button>`).join("");
   $("catsel").innerHTML = opts.map(([k,label,n]) =>
@@ -791,16 +815,20 @@ function card(i){
     </div>
   </article>`;
 }
+function visibleItems(){
+  return availOnly ? ITEMS.filter(i => !sold.has(i.id)) : ITEMS;
+}
 function render(){
   const t = UI[lang], term = q.value.trim().toLowerCase();
-  const list = ITEMS.filter(i =>
+  const pool = visibleItems();
+  const list = pool.filter(i =>
     (active === "all" || i.c === active) &&
     (!term || (i[lang].n + " " + i[lang].s + " " + i[lang].d).toLowerCase().includes(term))
   );
   grid.innerHTML = list.map(card).join("");
   emptyMsg.hidden = list.length > 0;
   emptyMsg.textContent = lang === "he" ? "לא נמצא פריט מתאים." : lang === "ru" ? "Ничего не найдено." : "No matching item.";
-  countEl.innerHTML = t.shown(list.length, ITEMS.length);
+  countEl.innerHTML = t.shown(list.length, pool.length);
 }
 
 /* ---------- modal ---------- */
@@ -870,6 +898,7 @@ function setCat(v){
   render();
 }
 $("catsel").addEventListener("change", e => setCat(e.target.value));
+$("availonly").addEventListener("change", e => { availOnly = e.target.checked; paintChrome(); render(); });
 q.addEventListener("input", render);
 $("sheetclose").addEventListener("click", ()=>sheet.close());
 $("lbclose").addEventListener("click", ()=>lightbox.close());
@@ -885,16 +914,18 @@ document.addEventListener("keydown", e => {
 /* ---------- sold state (saved for everyone) ---------- */
 function applySold(ids){
   sold = new Set(ids && ids.length ? ids : SOLD_BASE);
+  paintChrome();
   render();
   if(sheet.open) sheet.close();
 }
 function toggleSold(id){
   sold.has(id) ? sold.delete(id) : sold.add(id);
+  paintChrome();
   render();
 }
 
-render();
 paintChrome();
+render();
 
 fetch("sold.json", {cache:"no-store"})
   .then(r => r.ok ? r.json() : null)

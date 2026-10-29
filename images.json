@@ -197,5 +197,10 @@
  ],
  "fitness": [
   "img/fitness-1.webp"
+ ],
+ "helmets": [
+  "img/helmets-1.webp",
+  "img/helmets-2.webp",
+  "img/helmets-3.webp"
  ]
 }
