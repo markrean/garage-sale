@@ -211,6 +211,7 @@
    ====================================================================== */
 
 const CATS = ["furniture","elec","smart","kitchen","laundry","plants","other"];
+/* סדר הקטגוריות נקבע לפי כמות הפריטים שעדיין לא נמכרו — הרבה מלאי קודם */
 
 const UI = {
   he:{
@@ -777,7 +778,8 @@ function paintChrome(){
 
   const pool = visibleItems();
   const opts = [["all", t.all, pool.length]]
-    .concat(CATS.map(c => [c, t.cats[c], pool.filter(i=>i.c===c).length]));
+    .concat(catsOrdered().map(c => [c, t.cats[c], pool.filter(i=>i.c===c).length])
+                         .filter(([,,n]) => n > 0));
   chipsEl.innerHTML = opts.map(([k,label,n]) =>
     `<button class="chip" type="button" data-cat="${k}" aria-pressed="${k===active}">${label}<span class="c">${n}</span></button>`).join("");
   $("catsel").innerHTML = opts.map(([k,label,n]) =>
@@ -818,6 +820,14 @@ function card(i){
 function visibleItems(){
   return availOnly ? ITEMS.filter(i => !sold.has(i.id)) : ITEMS;
 }
+function catsOrdered(){
+  const left = c => ITEMS.filter(i => i.c === c && !sold.has(i.id)).length;
+  return CATS.slice().sort((a,b) => left(b) - left(a));
+}
+function byCatThenAvailable(order){
+  return (a,b) => (order.indexOf(a.c) - order.indexOf(b.c))
+               || ((sold.has(a.id)?1:0) - (sold.has(b.id)?1:0));
+}
 function render(){
   const t = UI[lang], term = q.value.trim().toLowerCase();
   const pool = visibleItems();
@@ -825,6 +835,7 @@ function render(){
     (active === "all" || i.c === active) &&
     (!term || (i[lang].n + " " + i[lang].s + " " + i[lang].d).toLowerCase().includes(term))
   );
+  list.sort(byCatThenAvailable(catsOrdered()));
   grid.innerHTML = list.map(card).join("");
   emptyMsg.hidden = list.length > 0;
   emptyMsg.textContent = lang === "he" ? "לא נמצא פריט מתאים." : lang === "ru" ? "Ничего не найдено." : "No matching item.";
@@ -898,7 +909,11 @@ function setCat(v){
   render();
 }
 $("catsel").addEventListener("change", e => setCat(e.target.value));
-$("availonly").addEventListener("change", e => { availOnly = e.target.checked; paintChrome(); render(); });
+$("availonly").addEventListener("change", e => {
+  availOnly = e.target.checked;
+  if(active !== "all" && !visibleItems().some(i => i.c === active)) active = "all";
+  paintChrome(); render();
+});
 q.addEventListener("input", render);
 $("sheetclose").addEventListener("click", ()=>sheet.close());
 $("lbclose").addEventListener("click", ()=>lightbox.close());
